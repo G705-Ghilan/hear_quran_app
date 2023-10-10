@@ -5,7 +5,6 @@ import 'package:hear_quran/core/resources/resources.dart';
 import 'package:hear_quran/dependencies_injection.dart';
 import 'package:hear_quran/features/quran_player/domain/entities/entities.dart';
 import 'package:hear_quran/features/quran_player/presentation/cubit/quran_player_cubit.dart';
-import 'package:hear_quran/services/audio_player/quran_player.dart';
 import 'package:hear_quran/services/services.dart';
 import 'package:just_audio/just_audio.dart';
 import 'package:like_button/like_button.dart';
@@ -38,21 +37,23 @@ class SurahItem extends StatelessWidget {
       selected: selected,
       offline: isOffline,
       onTap: () async {
-        context.read<QuranPlayerCubit>()
-          ..setMiniPlayer(true)
-          ..setPlayingSurahIndex(index);
-          
         if (!PermissionsHandler.filesAllowed) {
           await PermissionsHandler.askForStorage();
           if (PermissionsHandler.filesAllowed) {
+            context.read<QuranPlayerCubit>()
+              ..setMiniPlayer(true)
+              ..setPlayingSurahIndex(index);
             await player.init(
               ReciterParams(reciter: state.selectedReciter),
               context.currentCode,
             );
-            await MainBox.initilazieMainBox();
           } else {
             return;
           }
+        } else {
+          context.read<QuranPlayerCubit>()
+            ..setMiniPlayer(true)
+            ..setPlayingSurahIndex(index);
         }
 
         if (!selected) {

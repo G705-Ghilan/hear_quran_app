@@ -45,16 +45,15 @@ Future<void> _services() async {
   // permissions handler
   await PermissionsHandler.initlizeHandler();
 
+  // Main box
+  await MainBox.initilazieMainBox();
 
-
-  // Quran player & Main box
+  // Quran player
   final QuranPlayer player = QuranPlayer();
   sl.registerLazySingleton<QuranPlayer>(() => player);
 
   if (PermissionsHandler.filesAllowed) {
     await player.initCacheDir();
-    await MainBox.initilazieMainBox();
-
     await player.init(
       ReciterParams(
         reciter: DefualtBoxValues.reciter,
@@ -64,7 +63,6 @@ Future<void> _services() async {
       DefualtBoxValues.locale.languageCode,
     );
   } else {
-    await DefualtBoxValues().initializeLastValues(true);
     await player.initCacheDir();
   }
 }

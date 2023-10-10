@@ -34,18 +34,6 @@ class PlayIcon extends StatelessWidget {
 
         return IconButton(
           onPressed: () async {
-            if (!PermissionsHandler.filesAllowed) {
-              await PermissionsHandler.askForStorage();
-              if (PermissionsHandler.filesAllowed) {
-                await sl.get<QuranPlayer>().init(
-                      ReciterParams(reciter: DefualtBoxValues.reciter),
-                      DefualtBoxValues.locale.languageCode,
-                    );
-                await MainBox.initilazieMainBox();
-              } else {
-                return;
-              }
-            }
             await sl.get<QuranPlayer>().switchPlaying();
           },
           icon: Icon(

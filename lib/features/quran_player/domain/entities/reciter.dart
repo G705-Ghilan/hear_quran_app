@@ -21,12 +21,6 @@ class Reciter extends Equatable {
   List<Object?> get props =>
       [id, imgPath, enName, arName, audioUrl, unAvailables];
 
-  bool match(String text) {
-    text = text.toLowerCase();
-    return enName.toLowerCase().contains(text) ||
-        arName.toLowerCase().contains(text);
-  }
-
   int get surahsCount => 114 - unAvailables.length;
   String getName(String lang) => lang == "en" ? enName : arName;
 }

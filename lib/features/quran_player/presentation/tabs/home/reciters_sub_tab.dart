@@ -23,10 +23,11 @@ class RecitersSubTab extends StatelessWidget {
               onTap: () async {
                 if (!PermissionsHandler.filesAllowed) {
                   await PermissionsHandler.askForStorage();
-                  if (!PermissionsHandler.filesAllowed) {
+                  if (PermissionsHandler.filesAllowed) {
+                    await MainBox.initilazieMainBox();
+                  } else {
                     return;
                   }
-                 await MainBox.initilazieMainBox();
                 }
                 await context.read<QuranPlayerCubit>().selectReciter(index);
               },

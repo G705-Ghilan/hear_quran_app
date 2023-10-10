@@ -43,16 +43,7 @@ class QuranPlayerCubit extends Cubit<QuranPlayerState> with MainBoxMixin {
         ));
   }
 
-  // void search(String text) {
-  //   emit(state.copyWith(
-  //     reciters: sl<GetReciters>()(NoParams())
-  //         .where((reciter) => reciter.match(text))
-  //         .toList(),
-  //     surahs: sl<GetReciterSurahs>()(state.selectedReciterId)
-  //         .where((surah) => surah.match(text))
-  //         .toList(),
-  //   ));
-  // }
+
 
   void setMiniPlayer(bool show) {
     if (state.miniPlayer != show) {
