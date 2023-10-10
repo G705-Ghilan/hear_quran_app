@@ -12,11 +12,11 @@ enjoy with open source app 👍
 - [x] Favories Surahs Feature
 - [x] Simple UI 🤝
 
-    
+
 ### Project Structure
 
 <details>
-    
+
 ````
 
 lib
