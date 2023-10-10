@@ -5,7 +5,7 @@ flutter app
 ## project structure
 
 <details>
-````
+
 lib
 ├── core
 │   ├── app_route.dart
@@ -101,5 +101,5 @@ lib
     │   └── permissions_handler.dart
     └── services.dart
 
-````
+
 </details>
