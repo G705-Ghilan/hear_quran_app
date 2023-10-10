@@ -1,10 +1,23 @@
-# Hear Quran App
-flutter app
 
+# Hear Quran App 📱
+A Flutter app offering a streamlined experience for listening to the Quran, featuring renowned reciters from around the world.
+enjoy with open source app 👍
 
-## project structure
+<br>
+
+## Feature ✅
+
+- [x] Theme Configuration: `Light, Dark` 💪
+- [x] Multi-Language: `English, Arabic`
+- [x] Favories Surahs Feature
+- [x] Simple UI 🤝
+
+    
+### Project Structure
 
 <details>
+    
+````
 
 lib
 ├── core
@@ -101,5 +114,6 @@ lib
     │   └── permissions_handler.dart
     └── services.dart
 
+````
 
 </details>
