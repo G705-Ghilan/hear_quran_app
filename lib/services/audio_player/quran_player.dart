@@ -107,14 +107,11 @@ class QuranPlayer {
         );
 
         if (surahFile.existsSync()) {
-          print(surahFile.path);
           sources[reciter.id]!.add(AudioSource.file(
             surahFile.path,
             tag: tag,
           ));
         } else {
-          print(
-              '${reciter.audioUrl}/${"0" * (3 - id.toString().length)}$id.mp3');
           sources[reciter.id]!.add(
             LockCachingAudioSource(
               Uri.parse(
