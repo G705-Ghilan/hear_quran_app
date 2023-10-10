@@ -5,12 +5,12 @@ enjoy with open source app 👍
 
 <br>
 
-## Feature ✅
+## Features ✅
 
 - [x] Theme Configuration: `Light, Dark` 💪
 - [x] Multi-Language: `English, Arabic` 
 - [x] Favories Surahs Feature ♥️
-- [x] Quran Background Playing Support 💯
+- [x] Support Play Quran In Background 💯
 - [x] Save Surahs Locally When Playing ✅
 - [x] Simple UI 🤝
 
