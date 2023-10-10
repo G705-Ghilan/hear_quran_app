@@ -16,8 +16,7 @@ class MainBox {
     await box?.put(key.name, value);
   }
 
-  static T get<T>(BoxKeys key, [bool defualt = false]) {
-    if (defualt) return key.defaultValue;
+  static T get<T>(BoxKeys key) {
     if (box == null) {
       return key.defaultValue;
     }
