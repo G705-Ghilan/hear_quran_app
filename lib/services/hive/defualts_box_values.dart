@@ -21,16 +21,16 @@ class DefualtBoxValues with MainBoxMixin {
   static late LoopMode loopMode;
   static late bool shufle;
 
-  Future<void> initializeLastValues([bool defualt = false]) async {
-    themeMode = ThemeMode.values[get(BoxKeys.themeMode, defualt)];
-    locale = Locale(get(BoxKeys.language, defualt) ?? defaultLocale.languageCode);
-    reciter = sl.get<GetReciters>()(NoParams())[get(BoxKeys.reciter, defualt)];
-    favorites = List<int>.from(get(BoxKeys.favorites, defualt));
-    lastSurah = get(BoxKeys.lastSurah, defualt);
-    lastTime = stringToDuration(get(BoxKeys.lastTime, defualt));
-    showMiniPlayer = get(BoxKeys.showMiniPlayer, defualt);
-    loopMode = LoopMode.values[get(BoxKeys.loopMode, defualt)];
-    shufle = get(BoxKeys.shufle, defualt);
+  Future<void> initializeLastValues() async {
+    themeMode = ThemeMode.values[get(BoxKeys.themeMode)];
+    locale = Locale(get(BoxKeys.language) ?? defaultLocale.languageCode);
+    reciter = sl.get<GetReciters>()(NoParams())[get(BoxKeys.reciter)];
+    favorites = List<int>.from(get(BoxKeys.favorites));
+    lastSurah = get(BoxKeys.lastSurah);
+    lastTime = stringToDuration(get(BoxKeys.lastTime));
+    showMiniPlayer = get(BoxKeys.showMiniPlayer);
+    loopMode = LoopMode.values[get(BoxKeys.loopMode)];
+    shufle = get(BoxKeys.shufle);
   }
 
   static Locale get defaultLocale {
