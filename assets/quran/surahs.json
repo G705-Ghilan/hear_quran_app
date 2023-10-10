@@ -1,0 +1,572 @@
+[
+    {
+        "ar": "ٱلْفَاتِحَةِ",
+        "en": "Al-Faatiha",
+        "verses": 7
+    },
+    {
+        "ar": "البَقَرَةِ",
+        "en": "Al-Baqara",
+        "verses": 286
+    },
+    {
+        "ar": "آلِ عِمۡرَانَ",
+        "en": "Aal-i-Imraan",
+        "verses": 200
+    },
+    {
+        "ar": "النِّسَاءِ",
+        "en": "An-Nisaa",
+        "verses": 176
+    },
+    {
+        "ar": "المَائـِدَةِ",
+        "en": "Al-Maaida",
+        "verses": 120
+    },
+    {
+        "ar": "الأَنۡعَامِ",
+        "en": "Al-An'aam",
+        "verses": 165
+    },
+    {
+        "ar": "الأَعۡرَافِ",
+        "en": "Al-A'raaf",
+        "verses": 206
+    },
+    {
+        "ar": "الأَنفَالِ",
+        "en": "Al-Anfaal",
+        "verses": 75
+    },
+    {
+        "ar": "التَّوۡبَةِ",
+        "en": "At-Tawba",
+        "verses": 129
+    },
+    {
+        "ar": "يُونُسَ",
+        "en": "Yunus",
+        "verses": 109
+    },
+    {
+        "ar": "هُودٍ",
+        "en": "Hud",
+        "verses": 123
+    },
+    {
+        "ar": "يُوسُفَ",
+        "en": "Yusuf",
+        "verses": 111
+    },
+    {
+        "ar": "الرَّعۡدِ",
+        "en": "Ar-Ra'd",
+        "verses": 43
+    },
+    {
+        "ar": "إِبۡرَاهِيمَ",
+        "en": "Ibrahim",
+        "verses": 52
+    },
+    {
+        "ar": "الحِجۡرِ",
+        "en": "Al-Hijr",
+        "verses": 99
+    },
+    {
+        "ar": "النَّحۡلِ",
+        "en": "An-Nahl",
+        "verses": 128
+    },
+    {
+        "ar": "الإِسۡرَاءِ",
+        "en": "Al-Israa",
+        "verses": 111
+    },
+    {
+        "ar": "الكَهۡفِ",
+        "en": "Al-Kahf",
+        "verses": 110
+    },
+    {
+        "ar": "مَرۡيَمَ",
+        "en": "Maryam",
+        "verses": 98
+    },
+    {
+        "ar": "طه",
+        "en": "Taa-Haa",
+        "verses": 135
+    },
+    {
+        "ar": "الأَنبِيَاءِ",
+        "en": "Al-Anbiyaa",
+        "verses": 112
+    },
+    {
+        "ar": "الحَجِّ",
+        "en": "Al-Hajj",
+        "verses": 78
+    },
+    {
+        "ar": "المُؤۡمِنُونَ",
+        "en": "Al-Muminoon",
+        "verses": 118
+    },
+    {
+        "ar": "النُّورِ",
+        "en": "An-Noor",
+        "verses": 64
+    },
+    {
+        "ar": "الفُرۡقَانِ",
+        "en": "Al-Furqaan",
+        "verses": 77
+    },
+    {
+        "ar": "الشُّعَرَاءِ",
+        "en": "Ash-Shu'araa",
+        "verses": 227
+    },
+    {
+        "ar": "النَّمۡلِ",
+        "en": "An-Naml",
+        "verses": 93
+    },
+    {
+        "ar": "القَصَصِ",
+        "en": "Al-Qasas",
+        "verses": 88
+    },
+    {
+        "ar": "العَنكَبُوتِ",
+        "en": "Al-Ankaboot",
+        "verses": 69
+    },
+    {
+        "ar": "الرُّومِ",
+        "en": "Ar-Room",
+        "verses": 60
+    },
+    {
+        "ar": "لُقۡمَانَ",
+        "en": "Luqman",
+        "verses": 34
+    },
+    {
+        "ar": "السَّجۡدَةِ",
+        "en": "As-Sajda",
+        "verses": 30
+    },
+    {
+        "ar": "الأَحۡزَابِ",
+        "en": "Al-Ahzaab",
+        "verses": 73
+    },
+    {
+        "ar": "سَبَإٍ",
+        "en": "Saba",
+        "verses": 54
+    },
+    {
+        "ar": "فَاطِرٍ",
+        "en": "Faatir",
+        "verses": 45
+    },
+    {
+        "ar": "يسٓ",
+        "en": "Yaseen",
+        "verses": 83
+    },
+    {
+        "ar": "الصَّافَّاتِ",
+        "en": "As-Saaffaat",
+        "verses": 182
+    },
+    {
+        "ar": "صٓ",
+        "en": "Saad",
+        "verses": 88
+    },
+    {
+        "ar": "الزُّمَرِ",
+        "en": "Az-Zumar",
+        "verses": 75
+    },
+    {
+        "ar": "غَافِرٍ",
+        "en": "Ghafir",
+        "verses": 85
+    },
+    {
+        "ar": "فُصِّلَتۡ",
+        "en": "Fussilat",
+        "verses": 54
+    },
+    {
+        "ar": "الشُّورَىٰ",
+        "en": "Ash-Shura",
+        "verses": 53
+    },
+    {
+        "ar": "الزُّخۡرُفِ",
+        "en": "Az-Zukhruf",
+        "verses": 89
+    },
+    {
+        "ar": "الدُّخَانِ",
+        "en": "Ad-Dukhaan",
+        "verses": 59
+    },
+    {
+        "ar": "الجَاثِيَةِ",
+        "en": "Al-Jaathiya",
+        "verses": 37
+    },
+    {
+        "ar": "الأَحۡقَافِ",
+        "en": "Al-Ahqaf",
+        "verses": 35
+    },
+    {
+        "ar": "مُحَمَّدٍ",
+        "en": "Muhammad",
+        "verses": 38
+    },
+    {
+        "ar": "الفَتۡحِ",
+        "en": "Al-Fath",
+        "verses": 29
+    },
+    {
+        "ar": "الحُجُرَاتِ",
+        "en": "Al-Hujuraat",
+        "verses": 18
+    },
+    {
+        "ar": "قٓ",
+        "en": "Qaaf",
+        "verses": 45
+    },
+    {
+        "ar": "الذَّارِيَاتِ",
+        "en": "Adh-Dhaariyat",
+        "verses": 60
+    },
+    {
+        "ar": "الطُّورِ",
+        "en": "At-Tur",
+        "verses": 49
+    },
+    {
+        "ar": "النَّجۡمِ",
+        "en": "An-Najm",
+        "verses": 62
+    },
+    {
+        "ar": "القَمَرِ",
+        "en": "Al-Qamar",
+        "verses": 55
+    },
+    {
+        "ar": "الرَّحۡمَٰن",
+        "en": "Ar-Rahmaan",
+        "verses": 78
+    },
+    {
+        "ar": "الوَاقِعَةِ",
+        "en": "Al-Waaqia",
+        "verses": 96
+    },
+    {
+        "ar": "الحَدِيدِ",
+        "en": "Al-Hadid",
+        "verses": 29
+    },
+    {
+        "ar": "المُجَادلَةِ",
+        "en": "Al-Mujaadila",
+        "verses": 22
+    },
+    {
+        "ar": "الحَشۡرِ",
+        "en": "Al-Hashr",
+        "verses": 24
+    },
+    {
+        "ar": "المُمۡتَحنَةِ",
+        "en": "Al-Mumtahana",
+        "verses": 13
+    },
+    {
+        "ar": "الصَّفِّ",
+        "en": "As-Saff",
+        "verses": 14
+    },
+    {
+        "ar": "الجُمُعَةِ",
+        "en": "Al-Jumu'a",
+        "verses": 11
+    },
+    {
+        "ar": "المُنَافِقُونَ",
+        "en": "Al-Munaafiqoon",
+        "verses": 11
+    },
+    {
+        "ar": "التَّغَابُنِ",
+        "en": "At-Taghaabun",
+        "verses": 18
+    },
+    {
+        "ar": "الطَّلَاقِ",
+        "en": "At-Talaaq",
+        "verses": 12
+    },
+    {
+        "ar": "التَّحۡرِيمِ",
+        "en": "At-Tahrim",
+        "verses": 12
+    },
+    {
+        "ar": "المُلۡكِ",
+        "en": "Al-Mulk",
+        "verses": 30
+    },
+    {
+        "ar": "القَلَمِ",
+        "en": "Al-Qalam",
+        "verses": 52
+    },
+    {
+        "ar": "الحَاقَّةِ",
+        "en": "Al-Haaqqa",
+        "verses": 52
+    },
+    {
+        "ar": "المَعَارِجِ",
+        "en": "Al-Ma'aarij",
+        "verses": 44
+    },
+    {
+        "ar": "نُوحٍ",
+        "en": "Nooh",
+        "verses": 28
+    },
+    {
+        "ar": "الجِنِّ",
+        "en": "Al-Jinn",
+        "verses": 28
+    },
+    {
+        "ar": "المُزَّمِّلِ",
+        "en": "Al-Muzzammil",
+        "verses": 20
+    },
+    {
+        "ar": "المُدَّثِّرِ",
+        "en": "Al-Muddaththir",
+        "verses": 56
+    },
+    {
+        "ar": "القِيَامَةِ",
+        "en": "Al-Qiyaama",
+        "verses": 40
+    },
+    {
+        "ar": "الإِنسَانِ",
+        "en": "Al-Insaan",
+        "verses": 31
+    },
+    {
+        "ar": "المُرۡسَلَاتِ",
+        "en": "Al-Mursalaat",
+        "verses": 50
+    },
+    {
+        "ar": "النَّبَإِ",
+        "en": "An-Naba",
+        "verses": 40
+    },
+    {
+        "ar": "النَّازِعَاتِ",
+        "en": "An-Naazi'aat",
+        "verses": 46
+    },
+    {
+        "ar": "عَبَسَ",
+        "en": "Abasa",
+        "verses": 42
+    },
+    {
+        "ar": "التَّكۡوِيرِ",
+        "en": "At-Takwir",
+        "verses": 29
+    },
+    {
+        "ar": "الانفِطَارِ",
+        "en": "Al-Infitaar",
+        "verses": 19
+    },
+    {
+        "ar": "المُطَفِّفِينَ",
+        "en": "Al-Mutaffifin",
+        "verses": 36
+    },
+    {
+        "ar": "الانشِقَاقِ",
+        "en": "Al-Inshiqaaq",
+        "verses": 25
+    },
+    {
+        "ar": "البُرُوجِ",
+        "en": "Al-Burooj",
+        "verses": 22
+    },
+    {
+        "ar": "الطَّارِقِ",
+        "en": "At-Taariq",
+        "verses": 17
+    },
+    {
+        "ar": "الأَعۡلَىٰ",
+        "en": "Al-A'laa",
+        "verses": 19
+    },
+    {
+        "ar": "الغَاشِيَةِ",
+        "en": "Al-Ghaashiya",
+        "verses": 26
+    },
+    {
+        "ar": "الفَجۡرِ",
+        "en": "Al-Fajr",
+        "verses": 30
+    },
+    {
+        "ar": "البَلَدِ",
+        "en": "Al-Balad",
+        "verses": 20
+    },
+    {
+        "ar": "الشَّمۡسِ",
+        "en": "Ash-Shams",
+        "verses": 15
+    },
+    {
+        "ar": "اللَّيۡلِ",
+        "en": "Al-Lail",
+        "verses": 21
+    },
+    {
+        "ar": "الضُّحَىٰ",
+        "en": "Ad-Dhuhaa",
+        "verses": 11
+    },
+    {
+        "ar": "الشَّرۡحِ",
+        "en": "Ash-Sharh",
+        "verses": 8
+    },
+    {
+        "ar": "التِّينِ",
+        "en": "At-Tin",
+        "verses": 8
+    },
+    {
+        "ar": "العَلَقِ",
+        "en": "Al-Alaq",
+        "verses": 19
+    },
+    {
+        "ar": "القَدۡرِ",
+        "en": "Al-Qadr",
+        "verses": 5
+    },
+    {
+        "ar": "البَيِّنَةِ",
+        "en": "Al-Bayyina",
+        "verses": 8
+    },
+    {
+        "ar": "الزَّلۡزَلَةِ",
+        "en": "Az-Zalzala",
+        "verses": 8
+    },
+    {
+        "ar": "العَادِيَاتِ",
+        "en": "Al-Aadiyaat",
+        "verses": 11
+    },
+    {
+        "ar": "القَارِعَةِ",
+        "en": "Al-Qaari'a",
+        "verses": 11
+    },
+    {
+        "ar": "التَّكَاثُرِ",
+        "en": "At-Takaathur",
+        "verses": 8
+    },
+    {
+        "ar": "العَصۡرِ",
+        "en": "Al-Asr",
+        "verses": 3
+    },
+    {
+        "ar": "الهُمَزَةِ",
+        "en": "Al-Humaza",
+        "verses": 9
+    },
+    {
+        "ar": "الفِيلِ",
+        "en": "Al-Fil",
+        "verses": 5
+    },
+    {
+        "ar": "قُرَيۡشٍ",
+        "en": "Quraish",
+        "verses": 4
+    },
+    {
+        "ar": "المَاعُونِ",
+        "en": "Al-Maa'un",
+        "verses": 7
+    },
+    {
+        "ar": "الكَوۡثَرِ",
+        "en": "Al-Kawthar",
+        "verses": 3
+    },
+    {
+        "ar": "الكَافِرُونَ",
+        "en": "Al-Kaafiroon",
+        "verses": 6
+    },
+    {
+        "ar": "النَّصۡرِ",
+        "en": "An-Nasr",
+        "verses": 3
+    },
+    {
+        "ar": "المَسَدِ",
+        "en": "Al-Masad",
+        "verses": 5
+    },
+    {
+        "ar": "الإِخۡلَاصِ",
+        "en": "Al-Ikhlaas",
+        "verses": 4
+    },
+    {
+        "ar": "الفَلَقِ",
+        "en": "Al-Falaq",
+        "verses": 5
+    },
+    {
+        "ar": "النَّاسِ",
+        "en": "An-Naas",
+        "verses": 6
+    }
+]
