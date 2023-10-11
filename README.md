@@ -8,10 +8,11 @@ enjoy with open source app 👍
 ## Features ✅
 
 - [x] Theme Configuration: `Light, Dark` 💪
-- [x] Multi-Language: `English, Arabic` 
+- [x] Multi-Language: `عربي, English, 中文 , Deutsch, Türkçe, Français, Español` 
 - [x] Favories Surahs Feature ♥️
 - [x] Support Play Quran In Background 💯
 - [x] Save Surahs Locally When Playing ✅
+- [x] Offline Mode
 - [x] Simple UI 🤝
 
 
