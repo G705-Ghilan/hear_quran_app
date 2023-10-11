@@ -15,6 +15,7 @@ class QuranPlayer {
   late final String cacheDir;
   late final String lang;
   int lastIndex = 0;
+  late bool offline;
 
   Future<void> setReciter(ReciterParams params) async {
     await setReciterPlaylist(params.reciter);
@@ -37,6 +38,7 @@ class QuranPlayer {
     this.lang = lang;
     final session = await AudioSession.instance;
     await session.configure(const AudioSessionConfiguration.speech());
+    offline = DefualtBoxValues.offlineMode;
 
     player.setLoopMode(DefualtBoxValues.loopMode);
     if (DefualtBoxValues.shufle) {
@@ -99,7 +101,7 @@ class QuranPlayer {
       for (final (index, surah) in surahs.indexed) {
         final int id = surah.id;
 
-        final File surahFile = externalSurah(reciter.enName, id);
+        final File surahFile = externalSurah(reciter.en, id);
         final tag = MediaItem(
           id: index.toString(),
           title: reciter.getName(lang),
@@ -113,17 +115,32 @@ class QuranPlayer {
           ));
         } else {
           sources[reciter.id]!.add(
-            LockCachingAudioSource(
-              Uri.parse(
-                '${reciter.audioUrl}/${"0" * (3 - id.toString().length)}$id.mp3',
-              ),
-              cacheFile: surahFile,
-              tag: tag,
-            ),
+            offline
+                ? AudioSource.asset(
+                    "assets/audio/empty.mp3",
+                    tag: tag,
+                  )
+                : LockCachingAudioSource(
+                    Uri.parse(
+                      '${reciter.audioUrl}/${"0" * (3 - id.toString().length)}$id.mp3',
+                    ),
+                    cacheFile: surahFile,
+                    tag: tag,
+                  ),
           );
         }
       }
     }
+  }
+
+  Future<void> setOffline(bool mode, Reciter reciter) async {
+    offline = mode;
+    sources.clear();
+    await setReciter(ReciterParams(
+      reciter: reciter,
+      index: player.currentIndex,
+      duration: player.position,
+    ));
   }
 }
 

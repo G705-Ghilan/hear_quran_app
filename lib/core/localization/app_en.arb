@@ -15,11 +15,13 @@
   "english": "English",
   "general": "General",
   "aboutApp": "About app",
-  "aboutAppSub": "Quran listen",
+  "aboutAppSub": "Hear Quran",
   "licenses": "Licenses",
   "licensesSub": "See app licenses",
   "ok": "Ok",
-  "ar": "Arabic",
-  "en": "English",
-  "aboutDes": "Quran listen app is your companion to serene reflection. Relax and listen to the Quran recited by renowned voices from around the world. Enjoy online streaming or save recitations locally for a soul-soothing experience anytime, anywhere."
+  "cancel": "Cancel",
+  "offlineMode": "Offline Mode",
+  "offlineModeDes": "Plays only downloaded surahs, no new content will be downloaded even with an internet connection.",
+  "offlineHint": "You are currently in offline mode and unable to play surahs that aren't downloaded. Would you like to switch to online mode? Go Settings to change this.",
+  "aboutDes": "Hear Quran app is your simple Quran audio library. Listen online or offline to recitations by the most famous Quran reciters, accessible anytime after installing your selected Surahs."
 }

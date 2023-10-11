@@ -7,7 +7,8 @@ enum BoxKeys {
   lastTime("00:00:00.00"),
   showMiniPlayer(false),
   loopMode(1),
-  shufle(false);
+  shufle(false),
+  offlineMode(false);
 
   final dynamic defaultValue;
   const BoxKeys(this.defaultValue);

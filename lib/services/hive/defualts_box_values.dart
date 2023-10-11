@@ -20,6 +20,7 @@ class DefualtBoxValues with MainBoxMixin {
   static late bool showMiniPlayer;
   static late LoopMode loopMode;
   static late bool shufle;
+  static late bool offlineMode;
 
   Future<void> initializeLastValues() async {
     themeMode = ThemeMode.values[get(BoxKeys.themeMode)];
@@ -31,6 +32,7 @@ class DefualtBoxValues with MainBoxMixin {
     showMiniPlayer = get(BoxKeys.showMiniPlayer);
     loopMode = LoopMode.values[get(BoxKeys.loopMode)];
     shufle = get(BoxKeys.shufle);
+    offlineMode = get(BoxKeys.offlineMode);
   }
 
   static Locale get defaultLocale {

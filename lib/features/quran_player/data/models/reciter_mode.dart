@@ -4,8 +4,9 @@ class ReciterModel extends Reciter {
   const ReciterModel({
     required super.id,
     required super.imgPath,
-    required super.enName,
-    required super.arName,
+    required super.en,
+    required super.ar,
+    required super.zh,
     required super.audioUrl,
     required super.unAvailables,
   });
@@ -14,8 +15,9 @@ class ReciterModel extends Reciter {
     return ReciterModel(
       id: id,
       imgPath: json["img"],
-      enName: json["en"],
-      arName: json["ar"],
+      en: json["en"],
+      ar: json["ar"],
+      zh: json["zh"],
       audioUrl: json["url"],
       unAvailables: List<int>.from(json["unAvailables"]),
     );

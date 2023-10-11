@@ -5,6 +5,7 @@ import 'package:hear_quran/core/extenstions.dart';
 import 'package:hear_quran/core/resources/theme.dart';
 import 'package:hear_quran/core/widgets/widgets.dart';
 import 'package:hear_quran/features/general/general.dart';
+import 'package:hear_quran/features/quran_player/presentation/cubit/quran_player_cubit.dart';
 
 class SettingsTab extends StatelessWidget {
   const SettingsTab({super.key});
@@ -20,12 +21,33 @@ class SettingsTab extends StatelessWidget {
             children: [
               Headline(title: context.lang.general),
               BlocBuilder<SettingsCubit, SettingsState>(
+                buildWhen: (previous, current) {
+                  return previous.themeMode != current.themeMode;
+                },
                 builder: (context, state) {
                   return SettingItem(
                     value: state.isDark,
                     onChanged: context.read<SettingsCubit>().switchTheme,
                     title: context.lang.darkMode,
                     subtitle: context.lang.darkModeSub,
+                  );
+                },
+              ),
+              BlocBuilder<SettingsCubit, SettingsState>(
+                builder: (context, state) {
+                  return SettingItem(
+                    value: state.offlineMode,
+                    onChanged: (isOffline) {
+                      context.read<SettingsCubit>().switchOfflineMode(
+                            isOffline,
+                            context
+                                .read<QuranPlayerCubit>()
+                                .state
+                                .selectedReciter,
+                          );
+                    },
+                    title: context.lang.offlineMode,
+                    subtitle: context.lang.offlineModeDes,
                   );
                 },
               ),
@@ -59,9 +81,7 @@ class SettingsTab extends StatelessWidget {
   }
 
   String langName(BuildContext context) {
-    if (context.isArabic) {
-      return context.lang.ar;
-    }
-    return context.lang.en;
+    return SelectLangDialog
+        .languages[Localizations.localeOf(context).languageCode]!;
   }
 }

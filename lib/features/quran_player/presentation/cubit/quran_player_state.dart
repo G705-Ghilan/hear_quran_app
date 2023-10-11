@@ -16,6 +16,18 @@ final class QuranPlayerState extends Equatable {
     required this.playingSurahIndex,
     required this.favorites,
   });
+
+  factory QuranPlayerState.normal() {
+    return QuranPlayerState(
+      reciters: sl<GetReciters>()(NoParams()),
+      surahs: sl<GetReciterSurahs>()(DefualtBoxValues.reciter.id),
+      selectedReciterId: DefualtBoxValues.reciter.id,
+      miniPlayer: DefualtBoxValues.showMiniPlayer,
+      playingSurahIndex: DefualtBoxValues.lastSurah,
+      favorites: DefualtBoxValues.favorites,
+    );
+  }
+
   QuranPlayerState copyWith({
     List<Reciter>? reciters,
     List<Surah>? surahs,

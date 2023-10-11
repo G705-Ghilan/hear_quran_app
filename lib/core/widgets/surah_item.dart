@@ -2,7 +2,9 @@ import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:hear_quran/core/extenstions.dart';
 import 'package:hear_quran/core/resources/resources.dart';
+import 'package:hear_quran/core/widgets/dialogs/offline_hint_dialog.dart';
 import 'package:hear_quran/dependencies_injection.dart';
+import 'package:hear_quran/features/general/general.dart';
 import 'package:hear_quran/features/quran_player/domain/entities/entities.dart';
 import 'package:hear_quran/features/quran_player/presentation/cubit/quran_player_cubit.dart';
 import 'package:hear_quran/services/services.dart';
@@ -29,7 +31,7 @@ class SurahItem extends StatelessWidget {
     final QuranPlayer player = sl.get<QuranPlayer>();
     final bool selected = sequenceState?.currentIndex == index;
     final bool isOffline = player
-        .externalSurah(state.selectedReciter.enName, surah.id)
+        .externalSurah(state.selectedReciter.en, surah.id)
         .existsSync();
     return SurahItem(
       surah: surah,
@@ -50,11 +52,14 @@ class SurahItem extends StatelessWidget {
           } else {
             return;
           }
-        } else {
-          context.read<QuranPlayerCubit>()
-            ..setMiniPlayer(true)
-            ..setPlayingSurahIndex(index);
         }
+        if (context.read<SettingsCubit>().state.offlineMode && !isOffline) {
+          OfflineHintDialog.show(context);
+          return;
+        }
+        context.read<QuranPlayerCubit>()
+          ..setMiniPlayer(true)
+          ..setPlayingSurahIndex(index);
 
         if (!selected) {
           await player.seekIndex(index);

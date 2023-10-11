@@ -53,7 +53,7 @@ class StringsEn extends Strings {
   String get aboutApp => 'About app';
 
   @override
-  String get aboutAppSub => 'Quran listen';
+  String get aboutAppSub => 'Hear Quran';
 
   @override
   String get licenses => 'Licenses';
@@ -65,11 +65,17 @@ class StringsEn extends Strings {
   String get ok => 'Ok';
 
   @override
-  String get ar => 'Arabic';
+  String get cancel => 'Cancel';
 
   @override
-  String get en => 'English';
+  String get offlineMode => 'Offline Mode';
 
   @override
-  String get aboutDes => 'Quran listen app is your companion to serene reflection. Relax and listen to the Quran recited by renowned voices from around the world. Enjoy online streaming or save recitations locally for a soul-soothing experience anytime, anywhere.';
+  String get offlineModeDes => 'Plays only downloaded surahs, no new content will be downloaded even with an internet connection.';
+
+  @override
+  String get offlineHint => 'You are currently in offline mode and unable to play surahs that aren\'t downloaded. Would you like to switch to online mode? Go Settings to change this.';
+
+  @override
+  String get aboutDes => 'Hear Quran app is your simple Quran audio library. Listen online or offline to recitations by the most famous Quran reciters, accessible anytime after installing your selected Surahs.';
 }

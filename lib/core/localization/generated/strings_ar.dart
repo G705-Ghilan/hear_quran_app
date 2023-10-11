@@ -53,7 +53,7 @@ class StringsAr extends Strings {
   String get aboutApp => 'عن التطبيق';
 
   @override
-  String get aboutAppSub => 'الاستماع للقرآن';
+  String get aboutAppSub => 'استمع للقرآن';
 
   @override
   String get licenses => 'التراخيص';
@@ -65,11 +65,17 @@ class StringsAr extends Strings {
   String get ok => 'حسنًا';
 
   @override
-  String get ar => 'العربية';
+  String get cancel => 'إلغاء';
 
   @override
-  String get en => 'الإنجليزية';
+  String get offlineMode => 'وضع بدون اتصال';
 
   @override
-  String get aboutDes => 'تطبيق الاستماع للقرآن هو رفيقك للتأمل الهادئ. استرخ واستمع إلى القرآن الذي يتلى بأصوات مشهورة من جميع أنحاء العالم. استمتع بالبث المباشر أو احفظ التلاوات محليًا لتجربة مهدئة في أي وقت وفي أي مكان.';
+  String get offlineModeDes => 'يمكن فقط تشغيل السور المُنزّلة مسبقًا، ولن يتم تحميل أي سور جديدة حتى وإن كان هناك اتصال بالإنترنت.';
+
+  @override
+  String get offlineHint => 'أنت الآن في وضع عدم الاتصال ولا يمكنك تشغيل السور التي لم يتم تنزيلها. هل تريد الانتقال إلى وضع الاتصال? توجه إلى الإعدادات لتعديل هذا.';
+
+  @override
+  String get aboutDes => 'تطبيق \'استمع للقرآن\' هو مكتبتك الصوتية البسيطة للقرآن الكريم. استمع مباشرة أو بدون اتصال لتلاوات أشهر قراء القرآن، متاحة في أي وقت بعد تحميل السور المختارة.';
 }

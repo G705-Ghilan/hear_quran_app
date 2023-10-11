@@ -58,6 +58,7 @@ flutter:
     - assets/quran/reciters.json
     - assets/images/reciters/
     - assets/images/icons/
+    - assets/audio/empty.mp3
   fonts:
     - family: Amiri
       fonts:

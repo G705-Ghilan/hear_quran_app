@@ -54,85 +54,90 @@ class MaxPanelChild extends StatelessWidget {
             const CustomProgressBar(
               withTimeLabel: true,
             ),
-            Row(
-              mainAxisAlignment: MainAxisAlignment.center,
-              crossAxisAlignment: CrossAxisAlignment.center,
-              children: [
-                StreamBuilder<bool>(
-                  stream: sl.get<QuranPlayer>().player.shuffleModeEnabledStream,
-                  builder: (context, snapshot) {
-                    final shuffleModeEnabled = snapshot.data ?? false;
-                    return IconButton(
-                      icon: Icon(
-                        Icons.shuffle,
-                        color: context.colorScheme.primary
-                            .withOpacity(shuffleModeEnabled ? 1 : 0.5),
-                      ),
-                      onPressed: () async {
-                        final enable = !shuffleModeEnabled;
-                        MainBox.set(BoxKeys.shufle, enable);
-                        if (enable) {
-                          await sl.get<QuranPlayer>().player.shuffle();
-                        }
-                        await sl
-                            .get<QuranPlayer>()
-                            .player
-                            .setShuffleModeEnabled(enable);
-                      },
-                    );
-                  },
-                ),
-                IconButton(
-                  onPressed: () async {
-                    await sl.get<QuranPlayer>().player.seekToPrevious();
-                  },
-                  icon: Icon(Icons.skip_previous_rounded),
-                  color: context.colorScheme.primary,
-                  iconSize: 40,
-                ),
-                PlayIcon(
-                  size: 50,
-                  color: context.colorScheme.primary,
-                ),
-                IconButton(
-                  onPressed: () async {
-                    // await sl.get<QuranPlayer>().player.seekToNext();
-                    await sl.get<QuranPlayer>().player.seekToNext();
-                  },
-                  icon: const Icon(Icons.skip_next_rounded),
-                  color: context.colorScheme.primary,
-                  iconSize: 40,
-                ),
-                StreamBuilder<LoopMode>(
-                  stream: sl.get<QuranPlayer>().player.loopModeStream,
-                  builder: (context, snapshot) {
-                    final loopMode = snapshot.data ?? DefualtBoxValues.loopMode;
-                    final Color color = context.colorScheme.primary;
-                    MainBox.set(BoxKeys.loopMode, loopMode.index);
+            Directionality(
+              textDirection: TextDirection.ltr,
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.center,
+                crossAxisAlignment: CrossAxisAlignment.center,
+                children: [
+                  StreamBuilder<bool>(
+                    stream:
+                        sl.get<QuranPlayer>().player.shuffleModeEnabledStream,
+                    builder: (context, snapshot) {
+                      final shuffleModeEnabled = snapshot.data ?? false;
+                      return IconButton(
+                        icon: Icon(
+                          Icons.shuffle,
+                          color: context.colorScheme.primary
+                              .withOpacity(shuffleModeEnabled ? 1 : 0.5),
+                        ),
+                        onPressed: () async {
+                          final enable = !shuffleModeEnabled;
+                          MainBox.set(BoxKeys.shufle, enable);
+                          if (enable) {
+                            await sl.get<QuranPlayer>().player.shuffle();
+                          }
+                          await sl
+                              .get<QuranPlayer>()
+                              .player
+                              .setShuffleModeEnabled(enable);
+                        },
+                      );
+                    },
+                  ),
+                  IconButton(
+                    onPressed: () async {
+                      await sl.get<QuranPlayer>().player.seekToPrevious();
+                    },
+                    icon: Icon(Icons.skip_previous_rounded),
+                    color: context.colorScheme.primary,
+                    iconSize: 40,
+                  ),
+                  PlayIcon(
+                    size: 50,
+                    color: context.colorScheme.primary,
+                  ),
+                  IconButton(
+                    onPressed: () async {
+                      // await sl.get<QuranPlayer>().player.seekToNext();
+                      await sl.get<QuranPlayer>().player.seekToNext();
+                    },
+                    icon: const Icon(Icons.skip_next_rounded),
+                    color: context.colorScheme.primary,
+                    iconSize: 40,
+                  ),
+                  StreamBuilder<LoopMode>(
+                    stream: sl.get<QuranPlayer>().player.loopModeStream,
+                    builder: (context, snapshot) {
+                      final loopMode =
+                          snapshot.data ?? DefualtBoxValues.loopMode;
+                      final Color color = context.colorScheme.primary;
+                      MainBox.set(BoxKeys.loopMode, loopMode.index);
 
-                    final icons = [
-                      Icon(Icons.repeat, color: color.withOpacity(0.5)),
-                      Icon(Icons.repeat, color: color),
-                      Icon(Icons.repeat_one, color: color),
-                    ];
-                    const cycleModes = [
-                      LoopMode.off,
-                      LoopMode.all,
-                      LoopMode.one,
-                    ];
-                    final index = cycleModes.indexOf(loopMode);
-                    return IconButton(
-                      icon: icons[index],
-                      onPressed: () {
-                        sl.get<QuranPlayer>().player.setLoopMode(
-                              cycleModes[(cycleModes.indexOf(loopMode) + 1) %
-                                  cycleModes.length],
-                            );
-                      },
-                    );
-                  },
-                ),
-              ],
+                      final icons = [
+                        Icon(Icons.repeat, color: color.withOpacity(0.5)),
+                        Icon(Icons.repeat, color: color),
+                        Icon(Icons.repeat_one, color: color),
+                      ];
+                      const cycleModes = [
+                        LoopMode.off,
+                        LoopMode.all,
+                        LoopMode.one,
+                      ];
+                      final index = cycleModes.indexOf(loopMode);
+                      return IconButton(
+                        icon: icons[index],
+                        onPressed: () {
+                          sl.get<QuranPlayer>().player.setLoopMode(
+                                cycleModes[(cycleModes.indexOf(loopMode) + 1) %
+                                    cycleModes.length],
+                              );
+                        },
+                      );
+                    },
+                  ),
+                ],
+              ),
             ),
           ],
         ),

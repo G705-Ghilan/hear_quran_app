@@ -6,7 +6,12 @@ import 'package:flutter_localizations/flutter_localizations.dart';
 import 'package:intl/intl.dart' as intl;
 
 import 'strings_ar.dart';
+import 'strings_de.dart';
 import 'strings_en.dart';
+import 'strings_es.dart';
+import 'strings_fr.dart';
+import 'strings_tr.dart';
+import 'strings_zh.dart';
 
 /// Callers can lookup localized strings with an instance of Strings
 /// returned by `Strings.of(context)`.
@@ -90,7 +95,12 @@ abstract class Strings {
   /// A list of this localizations delegate's supported locales.
   static const List<Locale> supportedLocales = <Locale>[
     Locale('ar'),
-    Locale('en')
+    Locale('de'),
+    Locale('en'),
+    Locale('es'),
+    Locale('fr'),
+    Locale('tr'),
+    Locale('zh')
   ];
 
   /// No description provided for @home.
@@ -192,7 +202,7 @@ abstract class Strings {
   /// No description provided for @aboutAppSub.
   ///
   /// In en, this message translates to:
-  /// **'Quran listen'**
+  /// **'Hear Quran'**
   String get aboutAppSub;
 
   /// No description provided for @licenses.
@@ -213,22 +223,34 @@ abstract class Strings {
   /// **'Ok'**
   String get ok;
 
-  /// No description provided for @ar.
+  /// No description provided for @cancel.
   ///
   /// In en, this message translates to:
-  /// **'Arabic'**
-  String get ar;
+  /// **'Cancel'**
+  String get cancel;
 
-  /// No description provided for @en.
+  /// No description provided for @offlineMode.
   ///
   /// In en, this message translates to:
-  /// **'English'**
-  String get en;
+  /// **'Offline Mode'**
+  String get offlineMode;
+
+  /// No description provided for @offlineModeDes.
+  ///
+  /// In en, this message translates to:
+  /// **'Plays only downloaded surahs, no new content will be downloaded even with an internet connection.'**
+  String get offlineModeDes;
+
+  /// No description provided for @offlineHint.
+  ///
+  /// In en, this message translates to:
+  /// **'You are currently in offline mode and unable to play surahs that aren\'t downloaded. Would you like to switch to online mode? Go Settings to change this.'**
+  String get offlineHint;
 
   /// No description provided for @aboutDes.
   ///
   /// In en, this message translates to:
-  /// **'Quran listen app is your companion to serene reflection. Relax and listen to the Quran recited by renowned voices from around the world. Enjoy online streaming or save recitations locally for a soul-soothing experience anytime, anywhere.'**
+  /// **'Hear Quran app is your simple Quran audio library. Listen online or offline to recitations by the most famous Quran reciters, accessible anytime after installing your selected Surahs.'**
   String get aboutDes;
 }
 
@@ -241,7 +263,7 @@ class _StringsDelegate extends LocalizationsDelegate<Strings> {
   }
 
   @override
-  bool isSupported(Locale locale) => <String>['ar', 'en'].contains(locale.languageCode);
+  bool isSupported(Locale locale) => <String>['ar', 'de', 'en', 'es', 'fr', 'tr', 'zh'].contains(locale.languageCode);
 
   @override
   bool shouldReload(_StringsDelegate old) => false;
@@ -253,7 +275,12 @@ Strings lookupStrings(Locale locale) {
   // Lookup logic when only language code is specified.
   switch (locale.languageCode) {
     case 'ar': return StringsAr();
+    case 'de': return StringsDe();
     case 'en': return StringsEn();
+    case 'es': return StringsEs();
+    case 'fr': return StringsFr();
+    case 'tr': return StringsTr();
+    case 'zh': return StringsZh();
   }
 
   throw FlutterError(

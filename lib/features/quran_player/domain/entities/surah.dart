@@ -15,5 +15,5 @@ class Surah extends Equatable {
   @override
   List<Object?> get props => [id, arName, enName, verses];
 
-  String getName(String lang) => lang == "en" ? enName : arName;
+  String getName(String lang) => lang == "ar" ? arName : enName;
 }

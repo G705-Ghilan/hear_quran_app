@@ -10,14 +10,7 @@ part 'quran_player_state.dart';
 
 class QuranPlayerCubit extends Cubit<QuranPlayerState> with MainBoxMixin {
   QuranPlayerCubit()
-      : super(QuranPlayerState(
-          reciters: sl<GetReciters>()(NoParams()),
-          surahs: sl<GetReciterSurahs>()(DefualtBoxValues.reciter.id),
-          selectedReciterId: DefualtBoxValues.reciter.id,
-          miniPlayer: DefualtBoxValues.showMiniPlayer,
-          playingSurahIndex: DefualtBoxValues.lastSurah,
-          favorites: DefualtBoxValues.favorites,
-        ));
+      : super(QuranPlayerState.normal());
 
   Future<void> selectReciter(int reciterId) async {
     set(BoxKeys.reciter, reciterId);
