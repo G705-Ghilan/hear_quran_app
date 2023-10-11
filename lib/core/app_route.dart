@@ -9,16 +9,18 @@ import 'package:hear_quran/features/quran_player/presentation/tabs/home/reciters
 import 'package:hear_quran/features/quran_player/presentation/tabs/home/surahs_sub_tab.dart';
 
 enum Routes {
-  home("/"),
-  favorites("favorites"),
-  settings("/settings");
+  homeSurahs("/home/surahs"),
+  homeReciters("/home/reciters"),
+  favorites("/favorites"),
+  settings("/settings"),
+  licenses("/licenses");
 
   final String path;
   const Routes(this.path);
 }
 
 final routes = GoRouter(
-  initialLocation: "/home/surahs",
+  initialLocation: Routes.homeSurahs.path,
   routes: [
     StatefulShellRoute.indexedStack(
       builder: (context, state, navigationShell) {
@@ -27,7 +29,7 @@ final routes = GoRouter(
       branches: [
         // quran with its tabs surahs, reciters
         StatefulShellBranch(
-          initialLocation: "/home/surahs",
+          initialLocation: Routes.homeSurahs.path,
           routes: [
             StatefulShellRoute.indexedStack(
               builder: (context, state, navigationShell) {
@@ -38,7 +40,7 @@ final routes = GoRouter(
                   routes: [
                     GoRoute(
                       builder: (context, state) => const SurahsSubTab(),
-                      path:"/home/surahs",
+                      path: Routes.homeSurahs.path,
                     ),
                   ],
                 ),
@@ -46,7 +48,7 @@ final routes = GoRouter(
                   routes: [
                     GoRoute(
                       builder: (context, state) => const RecitersSubTab(),
-                      path:"/reciters",
+                      path: Routes.homeReciters.path,
                     ),
                   ],
                 ),
@@ -59,7 +61,7 @@ final routes = GoRouter(
           routes: [
             GoRoute(
               builder: (context, state) => const FavoritesTab(),
-              path:"/favorites",
+              path: Routes.favorites.path,
             ),
           ],
         ),
@@ -67,14 +69,14 @@ final routes = GoRouter(
           routes: [
             GoRoute(
               builder: (context, state) => const SettingsTab(),
-              path: "/settings",
+              path: Routes.settings.path,
             ),
           ],
         ),
       ],
     ),
     GoRoute(
-      path: "/licenses",
+      path: Routes.licenses.path,
       builder: (context, state) => LicensePage(
         applicationName: context.lang.aboutAppSub,
         applicationVersion: "0.1.1",

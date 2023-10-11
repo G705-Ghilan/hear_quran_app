@@ -13,7 +13,7 @@ class SelectLangDialog extends StatelessWidget {
     "de": "Deutsch", // German
     "tr": "Türkçe", //  Turkish
     "fr": "Français", //  French
-     "es":"Español", // Spanish  
+    "es": "Español", // Spanish
   };
 
   @override
@@ -28,16 +28,15 @@ class SelectLangDialog extends StatelessWidget {
               shape: RoundedRectangleBorder(borderRadius: AppTheme.radius),
               title: Text(languages[code]!),
               onTap: () {
-                context.read<SettingsCubit>().setlanguage(code);
-                Navigator.pop(context);
+                Navigator.pop(context, code);
               },
             );
           }).toList()),
     );
   }
 
-  static show(BuildContext context) {
-    showDialog(
+  static Future<T?> show<T>(BuildContext context) async {
+    return await showDialog<T>(
       context: context,
       builder: (context) {
         return const SelectLangDialog();

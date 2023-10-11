@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:go_router/go_router.dart';
+import 'package:hear_quran/core/app_route.dart';
 import 'package:hear_quran/core/extenstions.dart';
 import 'package:hear_quran/core/resources/theme.dart';
 import 'package:hear_quran/core/widgets/widgets.dart';
@@ -55,7 +56,11 @@ class SettingsTab extends StatelessWidget {
                 title: context.lang.language,
                 subtitle: langName(context),
                 onTap: () {
-                  SelectLangDialog.show(context);
+                  SelectLangDialog.show<String>(context).then((code) {
+                    if (code != null) {
+                      context.read<SettingsCubit>().setlanguage(code);
+                    }
+                  });
                 },
               ),
               Headline(title: context.lang.app),
@@ -70,7 +75,7 @@ class SettingsTab extends StatelessWidget {
                 title: context.lang.licenses,
                 subtitle: context.lang.licensesSub,
                 onTap: () {
-                  context.push("/licenses");
+                  context.push(Routes.licenses.path);
                 },
               ),
             ],
