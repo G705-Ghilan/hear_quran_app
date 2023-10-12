@@ -9,8 +9,7 @@ import 'package:hear_quran/services/services.dart';
 part 'quran_player_state.dart';
 
 class QuranPlayerCubit extends Cubit<QuranPlayerState> with MainBoxMixin {
-  QuranPlayerCubit()
-      : super(QuranPlayerState.normal());
+  QuranPlayerCubit() : super(QuranPlayerState.normal());
 
   Future<void> selectReciter(int reciterId) async {
     set(BoxKeys.reciter, reciterId);
@@ -23,20 +22,12 @@ class QuranPlayerCubit extends Cubit<QuranPlayerState> with MainBoxMixin {
     int index = newState.surahs.indexWhere((surah) => surah.id == id);
     index = index == -1 ? 0 : index;
     set(BoxKeys.lastSurah, index);
-    logger.i((
-      index,
-      id,
-      state.surahs[state.playingSurahIndex],
-      state.playingSurahIndex
-    ));
     emit(newState.copyWith(playingSurahIndex: index));
     await sl.get<QuranPlayer>().setReciter(ReciterParams(
           reciter: newState.selectedReciter,
           index: index,
         ));
   }
-
-
 
   void setMiniPlayer(bool show) {
     if (state.miniPlayer != show) {

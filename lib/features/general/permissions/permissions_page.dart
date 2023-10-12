@@ -70,6 +70,16 @@ class PermissionsPage extends StatelessWidget {
                       top: h * 0.8,
                       child: image("9.jpg", s * 0.09),
                     ),
+                    Positioned(
+                      left: w * 0.0,
+                      top: h * 0.8,
+                      child: image("12.jpg", s * 0.09),
+                    ),
+                    Positioned(
+                      left: w * 0.0,
+                      top: h * 0.1,
+                      child: image("13.jpg", s * 0.1),
+                    ),
                   ],
                 );
               },

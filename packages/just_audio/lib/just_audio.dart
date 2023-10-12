@@ -2854,13 +2854,18 @@ class LockCachingAudioSource extends StreamAudioSource {
 
     _progress = 0;
     subscription = response.listen((data) async {
-      // print("################$index ${_player?.currentIndex} $data");
-      // if (index != _player?.currentIndex) {
-      //           _response = null;
+      // only download surahs when its playing or selected
+      if (kDebugMode) {
+        print("################$index ${_player?.currentIndex} $data");
+      }
+      if (index != _player?.currentIndex) {
+        _response = null;
 
-      //   await subscription.cancel();
-      //   print("######@@@@@Pused");
-      // }
+        await subscription.cancel();
+        if (kDebugMode) {
+          print("######@@@@@Pused");
+        }
+      }
       _progress += data.length;
       final newPercentProgress = (sourceLength == null)
           ? 0

@@ -224,5 +224,46 @@
             114
         ],
         "url": "https://server14.mp3quran.net/download/islam/Rewayat-Hafs-A-n-Assem"
+    },
+    {
+        "img": "11.jpg",
+        "en": "Mahmoud Khalil Al Hosary",
+        "ar": "محمود خليل الحصري ",
+        "zh": "马哈茂德·哈利勒·阿尔·侯萨里",
+        "unAvailables": [],
+        "url": "https://server13.mp3quran.net/husr"
+    },
+    {
+        "img": "12.jpg",
+        "en": "Salah Bukhatir",
+        "ar": "صلاح بوخاطر",
+        "zh": "萨拉赫·布哈提尔",
+        "unAvailables": [],
+        "url": "https://server8.mp3quran.net/bu_khtr"
+    },
+    {
+        "img": "13.jpg",
+        "en": "Abdullah Awad Al Juhani",
+        "ar": "عبد الله عواد الجهني",
+        "zh": "阿卜杜拉·阿瓦德·阿尔·朱哈尼",
+        "unAvailables": [],
+        "url": "https://server13.mp3quran.net/jhn"
+    },
+    {
+        "img": "14.jpg",
+        "en": "Tawfeeq As Sayegh",
+        "ar": "توفيق الصايغ",
+        "zh": "陶菲克·阿斯·赛格",
+        "unAvailables": [],
+        "url": "https://server6.mp3quran.net/twfeeq"
+    },
+    {
+        "img": "15.jpg",
+        "en": "Abdul-Rahman Al-Sudais",
+        "ar": "عبد الرحمن السديس",
+        "zh": "阿卜杜勒-拉赫曼·阿尔-苏代斯",
+        "unAvailables": [],
+        "url": "https://server11.mp3quran.net/sds"
     }
+    
 ]
