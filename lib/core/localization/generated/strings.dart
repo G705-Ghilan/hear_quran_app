@@ -252,6 +252,24 @@ abstract class Strings {
   /// In en, this message translates to:
   /// **'Hear Quran app is your simple Quran audio library. Listen online or offline to recitations by the most famous Quran reciters, accessible anytime after installing your selected Surahs.'**
   String get aboutDes;
+
+  /// No description provided for @permissions.
+  ///
+  /// In en, this message translates to:
+  /// **'Permissions'**
+  String get permissions;
+
+  /// No description provided for @permissionsDes.
+  ///
+  /// In en, this message translates to:
+  /// **'Our app requires Storage permission to save your selected Surahs to your device, enabling you to listen to them offline at your convenience.'**
+  String get permissionsDes;
+
+  /// No description provided for @allow.
+  ///
+  /// In en, this message translates to:
+  /// **'Allow'**
+  String get allow;
 }
 
 class _StringsDelegate extends LocalizationsDelegate<Strings> {

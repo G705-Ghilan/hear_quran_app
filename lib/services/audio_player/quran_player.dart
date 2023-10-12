@@ -2,12 +2,13 @@ import 'dart:io';
 import 'package:hear_quran/dependencies_injection.dart';
 import 'package:hear_quran/features/quran_player/domain/entities/entities.dart';
 import 'package:hear_quran/features/quran_player/domain/usecases/usecases.dart';
-import 'package:hear_quran/services/services.dart';
 import 'package:just_audio/just_audio.dart';
+import 'package:hear_quran/services/services.dart';
 import 'package:just_audio_background/just_audio_background.dart';
 import 'package:path_provider/path_provider.dart';
 import 'package:rxdart/rxdart.dart';
 import 'package:audio_session/audio_session.dart';
+
 
 class QuranPlayer {
   final AudioPlayer player = AudioPlayer();
@@ -124,6 +125,7 @@ class QuranPlayer {
                     Uri.parse(
                       '${reciter.audioUrl}/${"0" * (3 - id.toString().length)}$id.mp3',
                     ),
+                    index: index,
                     cacheFile: surahFile,
                     tag: tag,
                   ),

@@ -78,4 +78,13 @@ class StringsEs extends Strings {
 
   @override
   String get aboutDes => 'La aplicación Escuchar el Corán es tu sencilla biblioteca de audio del Corán. Escucha en línea o sin conexión las recitaciones de los recitadores del Corán más famosos, accesibles en cualquier momento después de instalar tus suras seleccionadas.';
+
+  @override
+  String get permissions => 'Permisos';
+
+  @override
+  String get permissionsDes => 'Nuestra aplicación requiere permiso de almacenamiento para guardar las suras seleccionadas en su dispositivo, permitiéndole escucharlas sin conexión cuando lo desee.';
+
+  @override
+  String get allow => 'Permitir';
 }

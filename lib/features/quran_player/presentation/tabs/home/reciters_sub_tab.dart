@@ -3,7 +3,6 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:hear_quran/core/widgets/widgets.dart';
 import 'package:hear_quran/features/quran_player/domain/entities/entities.dart';
 import 'package:hear_quran/features/quran_player/presentation/cubit/quran_player_cubit.dart';
-import 'package:hear_quran/services/services.dart';
 
 class RecitersSubTab extends StatelessWidget {
   const RecitersSubTab({super.key});
@@ -21,14 +20,6 @@ class RecitersSubTab extends StatelessWidget {
               reciter: reciter,
               isSelected: state.selectedReciterId == index,
               onTap: () async {
-                if (!PermissionsHandler.filesAllowed) {
-                  await PermissionsHandler.askForStorage();
-                  if (PermissionsHandler.filesAllowed) {
-                    await MainBox.initilazieMainBox();
-                  } else {
-                    return;
-                  }
-                }
                 await context.read<QuranPlayerCubit>().selectReciter(index);
               },
             );

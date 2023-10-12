@@ -6,3 +6,4 @@ export 'headline.dart';
 export 'setting_item.dart';
 export 'dialogs/dialogs.dart';
 export 'with_observer.dart';
+export 'dialogs/dialogs.dart';

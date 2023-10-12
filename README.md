@@ -1,3 +1,4 @@
+<br>
 
 # Hear Quran App 📱
 A Flutter app offering a streamlined experience for listening to the Quran, featuring renowned reciters from around the world.

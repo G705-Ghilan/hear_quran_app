@@ -78,4 +78,13 @@ class StringsTr extends Strings {
 
   @override
   String get aboutDes => 'Kur\'an\'ı Dinle uygulaması, basit bir Kur\'an ses kütüphanenizdir. En ünlü Kur\'an hafızları tarafından yapılan okumaları seçtiğiniz sureleri yükledikten sonra istediğiniz zaman çevrimiçi veya çevrimdışı dinleyin.';
+
+  @override
+  String get permissions => 'İzinler';
+
+  @override
+  String get permissionsDes => 'Uygulamamız, seçtiğiniz sureleri cihazınıza kaydetmek için Depolama izni gerektirir, böylece istediğinizde çevrimdışı olarak dinleyebilirsiniz.';
+
+  @override
+  String get allow => 'İzin Ver';
 }

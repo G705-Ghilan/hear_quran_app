@@ -78,4 +78,13 @@ class StringsAr extends Strings {
 
   @override
   String get aboutDes => 'تطبيق \'استمع للقرآن\' هو مكتبتك الصوتية البسيطة للقرآن الكريم. استمع مباشرة أو بدون اتصال لتلاوات أشهر قراء القرآن، متاحة في أي وقت بعد تحميل السور المختارة.';
+
+  @override
+  String get permissions => 'الأذونات';
+
+  @override
+  String get permissionsDes => 'يتطلب تطبيقنا إذن تخزين لحفظ السور التي اخترتها على جهازك، مما يتيح لك الاستماع إليها دون اتصال بالإنترنت حسب راحتك.';
+
+  @override
+  String get allow => 'سمح';
 }

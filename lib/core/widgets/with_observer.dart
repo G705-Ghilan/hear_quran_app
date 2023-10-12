@@ -1,6 +1,12 @@
+import 'dart:async';
+
 import 'package:flutter/material.dart';
 import 'package:hear_quran/dependencies_injection.dart';
 import 'package:hear_quran/services/services.dart';
+
+class ConnectionObserver {
+  static bool connected = false;
+}
 
 class WithObserver extends StatefulWidget {
   const WithObserver({super.key, required this.child});

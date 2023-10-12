@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:hear_quran/core/extenstions.dart';
 import 'package:hear_quran/core/resources/resources.dart';
-import 'package:hear_quran/core/widgets/dialogs/offline_hint_dialog.dart';
+import 'package:hear_quran/core/widgets/widgets.dart';
 import 'package:hear_quran/dependencies_injection.dart';
 import 'package:hear_quran/features/general/general.dart';
 import 'package:hear_quran/features/quran_player/domain/entities/entities.dart';
@@ -30,33 +30,24 @@ class SurahItem extends StatelessWidget {
   ) {
     final QuranPlayer player = sl.get<QuranPlayer>();
     final bool selected = sequenceState?.currentIndex == index;
-    final bool isOffline = player
-        .externalSurah(state.selectedReciter.en, surah.id)
-        .existsSync();
+    final bool isOffline =
+        player.externalSurah(state.selectedReciter.en, surah.id).existsSync();
     return SurahItem(
       surah: surah,
       isLiked: state.favorites.contains(surah.id),
       selected: selected,
       offline: isOffline,
       onTap: () async {
-        if (!PermissionsHandler.filesAllowed) {
-          await PermissionsHandler.askForStorage();
-          if (PermissionsHandler.filesAllowed) {
-            context.read<QuranPlayerCubit>()
-              ..setMiniPlayer(true)
-              ..setPlayingSurahIndex(index);
-            await player.init(
-              ReciterParams(reciter: state.selectedReciter),
-              context.currentCode,
-            );
-          } else {
+        if (context.read<SettingsCubit>().state.offlineMode) {
+          if (!isOffline) {
+            OfflineHintDialog.show(context);
             return;
           }
         }
-        if (context.read<SettingsCubit>().state.offlineMode && !isOffline) {
-          OfflineHintDialog.show(context);
-          return;
-        }
+        // else if (!ConnectionObserver.connected && !isOffline) {
+        //   NoConnectionDialog.show(context);
+        //   return;
+        // }
         context.read<QuranPlayerCubit>()
           ..setMiniPlayer(true)
           ..setPlayingSurahIndex(index);

@@ -6,7 +6,7 @@ enum BoxKeys {
   lastSurah(0),
   lastTime("00:00:00.00"),
   showMiniPlayer(false),
-  loopMode(1),
+  loopMode(0),
   shufle(false),
   offlineMode(false);
 

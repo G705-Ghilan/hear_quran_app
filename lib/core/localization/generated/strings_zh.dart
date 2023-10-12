@@ -78,4 +78,13 @@ class StringsZh extends Strings {
 
   @override
   String get aboutDes => '听受《古兰经》应用是您简单的《古兰经》音频库。通过最著名的《古兰经》诵读者，在安装您选择的章节后，可随时在线或离线听受。';
+
+  @override
+  String get permissions => '权限';
+
+  @override
+  String get permissionsDes => '我们的应用需要存储权限以将您选择的苏拉保存到您的设备上，使您能够在方便的时候离线收听。';
+
+  @override
+  String get allow => '允许';
 }

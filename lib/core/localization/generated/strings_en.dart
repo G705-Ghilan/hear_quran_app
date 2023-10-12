@@ -78,4 +78,13 @@ class StringsEn extends Strings {
 
   @override
   String get aboutDes => 'Hear Quran app is your simple Quran audio library. Listen online or offline to recitations by the most famous Quran reciters, accessible anytime after installing your selected Surahs.';
+
+  @override
+  String get permissions => 'Permissions';
+
+  @override
+  String get permissionsDes => 'Our app requires Storage permission to save your selected Surahs to your device, enabling you to listen to them offline at your convenience.';
+
+  @override
+  String get allow => 'Allow';
 }

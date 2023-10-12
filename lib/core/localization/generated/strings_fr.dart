@@ -78,4 +78,13 @@ class StringsFr extends Strings {
 
   @override
   String get aboutDes => 'L\'application Écoutez le Coran est votre bibliothèque audio du Coran simple. Écoutez en ligne ou hors ligne les récitations des récitants du Coran les plus célèbres, accessibles à tout moment après avoir installé vos sourates sélectionnées.';
+
+  @override
+  String get permissions => 'Autorisations';
+
+  @override
+  String get permissionsDes => 'Notre application nécessite l\'autorisation de stockage pour enregistrer les sourates que vous avez sélectionnées sur votre appareil, vous permettant de les écouter hors ligne à votre convenance.';
+
+  @override
+  String get allow => 'Autoriser';
 }

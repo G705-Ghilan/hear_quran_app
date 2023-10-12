@@ -86,7 +86,6 @@ class SettingsTab extends StatelessWidget {
   }
 
   String langName(BuildContext context) {
-    return SelectLangDialog
-        .languages[Localizations.localeOf(context).languageCode]!;
+    return SelectLangDialog.languages[context.currentCode]!;
   }
 }

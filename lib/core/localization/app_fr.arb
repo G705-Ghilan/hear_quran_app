@@ -23,5 +23,8 @@
   "offlineMode": "Mode hors ligne",
   "offlineModeDes": "Joue uniquement les sourates téléchargées, aucun nouveau contenu ne sera téléchargé même avec une connexion Internet.",
   "offlineHint": "Vous êtes actuellement en mode hors ligne et ne pouvez pas lire les sourates qui ne sont pas téléchargées. Souhaitez-vous passer en mode en ligne ? Allez dans les paramètres pour changer cela.",
-  "aboutDes": "L'application Écoutez le Coran est votre bibliothèque audio du Coran simple. Écoutez en ligne ou hors ligne les récitations des récitants du Coran les plus célèbres, accessibles à tout moment après avoir installé vos sourates sélectionnées."
+  "aboutDes": "L'application Écoutez le Coran est votre bibliothèque audio du Coran simple. Écoutez en ligne ou hors ligne les récitations des récitants du Coran les plus célèbres, accessibles à tout moment après avoir installé vos sourates sélectionnées.",
+  "permissions": "Autorisations",
+  "permissionsDes": "Notre application nécessite l'autorisation de stockage pour enregistrer les sourates que vous avez sélectionnées sur votre appareil, vous permettant de les écouter hors ligne à votre convenance.",
+  "allow": "Autoriser"
 }

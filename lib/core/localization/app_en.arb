@@ -23,5 +23,8 @@
   "offlineMode": "Offline Mode",
   "offlineModeDes": "Plays only downloaded surahs, no new content will be downloaded even with an internet connection.",
   "offlineHint": "You are currently in offline mode and unable to play surahs that aren't downloaded. Would you like to switch to online mode? Go Settings to change this.",
-  "aboutDes": "Hear Quran app is your simple Quran audio library. Listen online or offline to recitations by the most famous Quran reciters, accessible anytime after installing your selected Surahs."
+  "aboutDes": "Hear Quran app is your simple Quran audio library. Listen online or offline to recitations by the most famous Quran reciters, accessible anytime after installing your selected Surahs.",
+  "permissions":  "Permissions",
+  "permissionsDes":"Our app requires Storage permission to save your selected Surahs to your device, enabling you to listen to them offline at your convenience.",
+  "allow":"Allow"
 }

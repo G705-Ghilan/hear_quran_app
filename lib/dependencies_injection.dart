@@ -57,7 +57,7 @@ Future<void> _services() async {
     await player.init(
       ReciterParams(
         reciter: DefualtBoxValues.reciter,
-        index: DefualtBoxValues.lastSurah,
+        index: 0,
         duration: DefualtBoxValues.lastTime,
       ),
       DefualtBoxValues.locale.languageCode,

@@ -25,5 +25,9 @@
   "offlineMode": "Offline-Modus",
   "offlineModeDes": "Spielt nur heruntergeladene Suren ab, es werden keine neuen Inhalte heruntergeladen, auch nicht bei einer Internetverbindung.",
   "offlineHint": "Sie befinden sich derzeit im Offline-Modus und können Suren, die nicht heruntergeladen wurden, nicht abspielen. Möchten Sie in den Online-Modus wechseln? Gehen Sie zu den Einstellungen, um dies zu ändern.",
-  "aboutDes": "Die App 'Höre Quran' ist Ihre einfache Audio-Bibliothek für den Quran. Hören Sie online oder offline Rezitationen der bekanntesten Quran-Rezitatoren, jederzeit zugänglich, nachdem Sie Ihre ausgewählten Suren installiert haben."
+  "aboutDes": "Die App 'Höre Quran' ist Ihre einfache Audio-Bibliothek für den Quran. Hören Sie online oder offline Rezitationen der bekanntesten Quran-Rezitatoren, jederzeit zugänglich, nachdem Sie Ihre ausgewählten Suren installiert haben.",
+  "permissions": "Berechtigungen",
+  "permissionsDes": "Unsere App benötigt die Speicherberechtigung, um Ihre ausgewählten Suren auf Ihrem Gerät zu speichern, damit Sie sie offline hören können, wann immer Sie möchten.",
+  "allow": "Erlauben"
+
 }

@@ -13,7 +13,6 @@ class HearQuranApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     FlutterNativeSplash.remove();
-
     return BlocBuilder<SettingsCubit, SettingsState>(
       builder: (context, state) {
         return AnnotatedRegion(
@@ -23,16 +22,7 @@ class HearQuranApp extends StatelessWidget {
               routerConfig: routes,
               debugShowCheckedModeBanner: false,
               localizationsDelegates: Strings.localizationsDelegates,
-              supportedLocales: [
-                const Locale('en', ''), // English -> "English"
-                const Locale('zh', ''), // Chinese -> "中文"
-                const Locale('de', ''), // German -> "Deutsch"
-                const Locale('fr', ''), // French -> "Français"
-                const Locale('es', ''), // Spanish -> "Español"
-                const Locale('ar', ''), // Arabic -> "عربي"
-                const Locale('tr', ''), // Turkish -> "Türkçe"
-                const Locale('es', ''), // Spanish -> "Español"
-              ],
+              supportedLocales: Strings.supportedLocales,
               theme: AppTheme.lightThemeMode(state.fontFamily),
               darkTheme: AppTheme.darkThemeMode(state.fontFamily),
               themeMode: state.themeMode,

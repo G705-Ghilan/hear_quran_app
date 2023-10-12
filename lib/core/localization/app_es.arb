@@ -23,5 +23,8 @@
   "offlineMode": "Modo sin conexión",
   "offlineModeDes": "Reproduce solo suras descargadas, no se descargará nuevo contenido incluso con conexión a Internet.",
   "offlineHint": "Actualmente estás en modo sin conexión y no puedes reproducir suras que no estén descargadas. ¿Deseas cambiar al modo en línea? Ve a Configuración para cambiar esto.",
-  "aboutDes": "La aplicación Escuchar el Corán es tu sencilla biblioteca de audio del Corán. Escucha en línea o sin conexión las recitaciones de los recitadores del Corán más famosos, accesibles en cualquier momento después de instalar tus suras seleccionadas."
+  "aboutDes": "La aplicación Escuchar el Corán es tu sencilla biblioteca de audio del Corán. Escucha en línea o sin conexión las recitaciones de los recitadores del Corán más famosos, accesibles en cualquier momento después de instalar tus suras seleccionadas.",
+  "permissions": "Permisos",
+  "permissionsDes": "Nuestra aplicación requiere permiso de almacenamiento para guardar las suras seleccionadas en su dispositivo, permitiéndole escucharlas sin conexión cuando lo desee.",
+  "allow": "Permitir"
 }

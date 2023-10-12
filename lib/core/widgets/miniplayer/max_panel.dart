@@ -7,6 +7,7 @@ import 'package:hear_quran/features/quran_player/presentation/cubit/quran_player
 import 'package:hear_quran/services/audio_player/quran_player.dart';
 import 'package:hear_quran/services/services.dart';
 import 'package:just_audio/just_audio.dart';
+import 'package:just_audio/just_audio.dart';
 import 'miniplayer.dart';
 
 class MaxPanelChild extends StatelessWidget {

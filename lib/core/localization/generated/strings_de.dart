@@ -78,4 +78,13 @@ class StringsDe extends Strings {
 
   @override
   String get aboutDes => 'Die App \'Höre Quran\' ist Ihre einfache Audio-Bibliothek für den Quran. Hören Sie online oder offline Rezitationen der bekanntesten Quran-Rezitatoren, jederzeit zugänglich, nachdem Sie Ihre ausgewählten Suren installiert haben.';
+
+  @override
+  String get permissions => 'Berechtigungen';
+
+  @override
+  String get permissionsDes => 'Unsere App benötigt die Speicherberechtigung, um Ihre ausgewählten Suren auf Ihrem Gerät zu speichern, damit Sie sie offline hören können, wann immer Sie möchten.';
+
+  @override
+  String get allow => 'Erlauben';
 }
