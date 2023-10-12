@@ -7,8 +7,7 @@ import 'package:hear_quran/dependencies_injection.dart';
 import 'package:hear_quran/services/services.dart';
 
 class PermissionsPage extends StatelessWidget {
-  PermissionsPage({super.key});
-  bool loading = false;
+  const PermissionsPage({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -108,38 +107,27 @@ class PermissionsPage extends StatelessWidget {
               ),
             ),
           ),
-          StatefulBuilder(
-            builder: (BuildContext context, StateSetter setState) {
-              return GestureDetector(
-                onTap: () async => await onAllowClicked(context, setState),
-                child: AnimatedSize(
-                  duration: const Duration(milliseconds: 200),
-                  child: Container(
-                    margin: AppTheme.padding.copyWith(bottom: 20),
-                    padding: AppTheme.padding,
-                    alignment: Alignment.center,
-                    height: 50,
-                    width: loading ? 50 : null,
-                    decoration: BoxDecoration(
-                      borderRadius: AppTheme.radius * (loading ? 100 : 1),
-                      color: context.colorScheme.primary,
-                    ),
-                    child: loading
-                        ? CircularProgressIndicator(
-                            color: context.colorScheme.onPrimary,
-                          )
-                        : Text(
-                            context.lang.allow,
-                            style: TextStyle(
-                              color: context.colorScheme.onPrimary,
-                              fontWeight: FontWeight.bold,
-                              fontSize: 15,
-                            ),
-                          ),
-                  ),
+          GestureDetector(
+            onTap: () async => await onAllowClicked(context),
+            child: Container(
+              margin: AppTheme.padding.copyWith(bottom: 20),
+              padding: AppTheme.padding,
+              alignment: Alignment.center,
+              height: 50,
+              // width: 50,
+              decoration: BoxDecoration(
+                borderRadius: AppTheme.radius,
+                color: context.colorScheme.primary,
+              ),
+              child: Text(
+                context.lang.allow,
+                style: TextStyle(
+                  color: context.colorScheme.onPrimary,
+                  fontWeight: FontWeight.bold,
+                  fontSize: 15,
                 ),
-              );
-            },
+              ),
+            ),
           ),
         ],
       ),
@@ -153,12 +141,9 @@ class PermissionsPage extends StatelessWidget {
     );
   }
 
-  Future<void> onAllowClicked(
-      BuildContext context, StateSetter setState) async {
-    if (loading) return;
+  Future<void> onAllowClicked(BuildContext context) async {
     await PermissionsHandler.askForStorage();
     if (PermissionsHandler.filesAllowed) {
-      setState(() => loading = true);
       context.go(Routes.homeSurahs.path);
       try {
         await sl.get<QuranPlayer>().init(
@@ -170,7 +155,7 @@ class PermissionsPage extends StatelessWidget {
               DefualtBoxValues.locale.languageCode,
             );
       } catch (e, t) {
-        logger.e("error............", error: e, stackTrace: t);
+        logger.e("error on permissions page", error: e, stackTrace: t);
       }
     }
   }

@@ -1,7 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:hear_quran/core/resources/theme.dart';
-import 'package:hear_quran/features/general/general.dart';
 
 class SelectLangDialog extends StatelessWidget {
   const SelectLangDialog({super.key});

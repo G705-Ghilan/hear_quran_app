@@ -7,24 +7,23 @@ import 'package:hear_quran/services/audio_player/quran_player.dart';
 class CustomProgressBar extends StatelessWidget {
   const CustomProgressBar({super.key, this.withTimeLabel = false});
   final bool withTimeLabel;
+  static PositionData? positionData;
 
   @override
   Widget build(BuildContext context) {
-    // if (withTimeLabel) {
-    //   return withLabelsProgressbar(context);
-    // }
     return StreamBuilder<PositionData>(
       stream: sl.get<QuranPlayer>().positionDataStream,
       builder: (context, snapshot) {
-        final PositionData? data = snapshot.data;
+        final PositionData? data = snapshot.data ?? positionData;
+        if (data != null) {
+          positionData = data;
+        }
         return ProgressBar(
           timeLabelLocation: withTimeLabel ? null : TimeLabelLocation.none,
           thumbCanPaintOutsideBar: false,
           progress: data?.position ?? Duration.zero,
           buffered: data?.bufferedPosition ?? Duration.zero,
-          total: data?.duration ??Duration.zero,
-              // sl.get<QuranPlayer>().stringToDuration(
-              //     MainBox.get(BoxKeys.lastTime) ?? "0:00:00.00000"),
+          total: data?.duration ?? Duration.zero,
           thumbRadius: withTimeLabel ? 10.0 : 3,
           thumbGlowRadius: withTimeLabel ? 20 : 0,
           barHeight: withTimeLabel ? 5 : 1.5,

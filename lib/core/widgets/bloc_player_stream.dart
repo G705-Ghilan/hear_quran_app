@@ -4,7 +4,6 @@ import 'package:hear_quran/dependencies_injection.dart';
 import 'package:hear_quran/features/quran_player/presentation/cubit/quran_player_cubit.dart';
 import 'package:hear_quran/services/audio_player/quran_player.dart';
 import 'package:just_audio/just_audio.dart';
-import 'package:just_audio/just_audio.dart';
 
 typedef BuildFunc = Widget Function(
   BuildContext context,
