@@ -48,19 +48,28 @@ flutter run
 
 <details>
 
-````
-
-lib
+```
+lib 
 ├── core
 │   ├── app_route.dart
 │   ├── extenstions.dart
 │   ├── localization
 │   │   ├── app_ar.arb
+│   │   ├── app_de.arb
 │   │   ├── app_en.arb
+│   │   ├── app_es.arb
+│   │   ├── app_fr.arb
+│   │   ├── app_tr.arb
+│   │   ├── app_zh.arb
 │   │   ├── generated
 │   │   │   ├── strings_ar.dart
 │   │   │   ├── strings.dart
-│   │   │   └── strings_en.dart
+│   │   │   ├── strings_de.dart
+│   │   │   ├── strings_en.dart
+│   │   │   ├── strings_es.dart
+│   │   │   ├── strings_fr.dart
+│   │   │   ├── strings_tr.dart
+│   │   │   └── strings_zh.dart
 │   │   └── localization.dart
 │   ├── resources
 │   │   ├── images.dart
@@ -73,6 +82,7 @@ lib
 │       ├── dialogs
 │       │   ├── about_dialog.dart
 │       │   ├── dialogs.dart
+│       │   ├── offline_hint_dialog.dart
 │       │   └── select_lang_dialog.dart
 │       ├── headline.dart
 │       ├── miniplayer
@@ -92,6 +102,8 @@ lib
 ├── features
 │   ├── general
 │   │   ├── general.dart
+│   │   ├── permissions
+│   │   │   └── permissions_page.dart
 │   │   └── settings
 │   │       ├── cubit
 │   │       │   ├── settings_cubit.dart
@@ -145,7 +157,7 @@ lib
     │   └── permissions_handler.dart
     └── services.dart
 
-````
+```
 
 </details>
 
