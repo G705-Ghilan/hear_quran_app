@@ -35,6 +35,8 @@ dependencies:
   just_audio:
     path: ./packages/just_audio
   just_audio_background: ^0.0.1-beta.10
+  audio_session: ^0.1.16
+
 
   # ui packages
   like_button: ^2.0.5
@@ -49,7 +51,7 @@ dependencies:
   
   # splash screen
   flutter_native_splash: ^2.3.3
-  audio_session: ^0.1.16
+  rename: ^3.0.0
 
 dev_dependencies:
   flutter_test:
