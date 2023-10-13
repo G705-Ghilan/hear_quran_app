@@ -13,11 +13,11 @@ class HearQuranApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     FlutterNativeSplash.remove();
-    return BlocBuilder<SettingsCubit, SettingsState>(
-      builder: (context, state) {
-        return AnnotatedRegion(
-          value: AppTheme.setDeviceSafeEreasThemeAuto(state.isDark),
-          child: WithObserver(
+    return WithObserver(
+      child: BlocBuilder<SettingsCubit, SettingsState>(
+        builder: (context, state) {
+          return AnnotatedRegion(
+            value: AppTheme.setDeviceSafeEreasThemeAuto(state.isDark),
             child: MaterialApp.router(
               routerConfig: routes,
               debugShowCheckedModeBanner: false,
@@ -28,9 +28,9 @@ class HearQuranApp extends StatelessWidget {
               themeMode: state.themeMode,
               locale: state.locale,
             ),
-          ),
-        );
-      },
+          );
+        },
+      ),
     );
   }
 }

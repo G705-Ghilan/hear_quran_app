@@ -49,6 +49,7 @@ dependencies:
   
   # splash screen
   flutter_native_splash: ^2.3.3
+  audio_session: ^0.1.16
 
 dev_dependencies:
   flutter_test:

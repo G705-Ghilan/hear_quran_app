@@ -20,6 +20,11 @@ class _WithObserverState extends State<WithObserver>
   void initState() {
     super.initState();
     WidgetsBinding.instance.addObserver(this);
+    if (PermissionsHandler.filesAllowed) {
+      sl.get<QuranPlayer>().init();
+    }
+
+    logger.i("App Started ...");
   }
 
   @override

@@ -38,6 +38,7 @@ class SurahItem extends StatelessWidget {
       selected: selected,
       offline: isOffline,
       onTap: () async {
+        logger.i("Taped");
         if (context.read<SettingsCubit>().state.offlineMode) {
           if (!isOffline) {
             OfflineHintDialog.show(context);

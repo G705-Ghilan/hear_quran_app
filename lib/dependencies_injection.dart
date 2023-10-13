@@ -52,17 +52,7 @@ Future<void> _services() async {
   final QuranPlayer player = QuranPlayer();
   sl.registerLazySingleton<QuranPlayer>(() => player);
 
-  if (PermissionsHandler.filesAllowed) {
+ 
     await player.initCacheDir();
-    await player.init(
-      ReciterParams(
-        reciter: DefualtBoxValues.reciter,
-        index: DefualtBoxValues.lastSurah,
-        duration: DefualtBoxValues.lastTime,
-      ),
-      DefualtBoxValues.locale.languageCode,
-    );
-  } else {
-    await player.initCacheDir();
-  }
+ 
 }

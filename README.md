@@ -1,23 +1,50 @@
-<br>
-
 # Hear Quran App 📱
-A Flutter app offering a streamlined experience for listening to the Quran, featuring renowned reciters from around the world.
-enjoy with open source app 👍
 
-<br>
+## Overview
+Hear Quran App is a Flutter-based mobile application that offers a seamless experience for listening to the Holy Quran. It features a collection of renowned reciters from around the world, ensuring a diverse and enriching listening experience. As an open-source project, we welcome contributions from developers and users alike to enhance and expand the app's capabilities.
+
+## Installation ✅
+
+### 1. Clone the Repository
+Clone the repository to your local machine to get started:
+```shell
+git clone https://github.com/G705-Ghilan/hear_quran_app.git
+```
+
+### 2. Install Packages
+Navigate to the project directory and install the required packages:
+```shell
+cd hear_quran_app
+flutter pub get
+```
+
+### 3. Run the Application
+Ensure your emulator is running and connected to the internet, then execute:
+```shell
+flutter run
+```
+> **Note:** Ensure the emulator is connected to the internet to avoid errors from the `just_audio` plugin.
 
 ## Features ✅
 
-- [x] Theme Configuration: `Light, Dark` 💪
-- [x] Multi-Language: `عربي, English, 中文 , Deutsch, Türkçe, Français, Español` 
-- [x] Favories Surahs Feature ♥️
-- [x] Support Play Quran In Background 💯
-- [x] Save Surahs Locally When Playing ✅
-- [x] Offline Mode
-- [x] Simple UI 🤝
+- Theme Configuration: Supports Light and Dark modes 💪
+- Multi-Language Support: `عربي, English, 中文, Deutsch, Türkçe, Français, Español`
+- Favorites Surahs Feature ♥️
+- Background Playback 💯
+- Local Surahs Saving ✅
+- Offline Mode
+- Intuitive and User-Friendly UI 🤝
 
 
-### Project Structure
+## To-Do 🚀
+
+- ❌ Fix `just_audio` errors when opening the app without an internet connection
+- ❌ Improve the app's structural organization for enhanced readability and maintainability
+- ❌ Optimize app performance for a smoother user experience
+
+
+## Project Structure
+
 
 <details>
 
@@ -121,3 +148,14 @@ lib
 ````
 
 </details>
+
+
+
+## Contributing
+
+We warmly welcome contributions from the community. If you would like to contribute to the enhancement of Hear Quran App, please fork the repository and submit your pull requests. We are excited to collaborate with passionate individuals like you!
+
+## License
+
+Hear Quran App is open-source and available under the MIT license
+

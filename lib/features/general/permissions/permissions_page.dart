@@ -146,14 +146,7 @@ class PermissionsPage extends StatelessWidget {
     if (PermissionsHandler.filesAllowed) {
       context.go(Routes.homeSurahs.path);
       try {
-        await sl.get<QuranPlayer>().init(
-              ReciterParams(
-                reciter: DefualtBoxValues.reciter,
-                index: DefualtBoxValues.lastSurah,
-                duration: DefualtBoxValues.lastTime,
-              ),
-              DefualtBoxValues.locale.languageCode,
-            );
+        await sl.get<QuranPlayer>().init();
       } catch (e, t) {
         logger.e("error on permissions page", error: e, stackTrace: t);
       }

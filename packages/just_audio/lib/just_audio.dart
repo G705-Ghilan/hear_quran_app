@@ -13,6 +13,9 @@ import 'package:path/path.dart' as p;
 import 'package:path_provider/path_provider.dart';
 import 'package:rxdart/rxdart.dart';
 import 'package:uuid/uuid.dart';
+import 'package:logger/logger.dart';
+
+final Logger _log = Logger();
 
 const _uuid = Uuid();
 
@@ -899,6 +902,7 @@ class AudioPlayer {
   Future<void> play() async {
     if (_disposed) return;
     if (playing) return;
+
     _playInterrupted = false;
     // Broadcast to clients immediately, but revert to false if we fail to
     // activate the audio session. This allows setAudioSource to be aware of a
@@ -1108,6 +1112,7 @@ class AudioPlayer {
   /// A `null` [position] seeks to the head of a live stream.
   Future<void> seek(final Duration? position, {int? index}) async {
     if (_disposed) return;
+
     _initialSeekValues = null;
     switch (processingState) {
       case ProcessingState.loading:
@@ -2856,14 +2861,18 @@ class LockCachingAudioSource extends StreamAudioSource {
     subscription = response.listen((data) async {
       // only download surahs when its playing or selected
       if (kDebugMode) {
-        print("################$index ${_player?.currentIndex} $data");
+        _log.i(
+          "Downloading the Audio with index $index with current Index ${_player?.currentIndex}",
+        );
       }
       if (index != _player?.currentIndex) {
         _response = null;
 
         await subscription.cancel();
         if (kDebugMode) {
-          print("######@@@@@Pused");
+          _log.i(
+            "Stoped download the Audio because audio index $index != the currentIndex ${_player?.currentIndex}",
+          );
         }
       }
       _progress += data.length;
@@ -3029,6 +3038,7 @@ class LockCachingAudioSource extends StreamAudioSource {
     // cache no network errors and pass it
     if (index == _player?.currentIndex) {
       try {
+        _downloading = true;
         final HttpClient httpClient =
             _createHttpClient(userAgent: _player?._userAgent);
         final HttpClientRequest httpRequest =
@@ -3043,14 +3053,36 @@ class LockCachingAudioSource extends StreamAudioSource {
           }
           return Future<HttpClientResponse>.error(error as Object, stackTrace);
         });
-      } catch (error) {
+      } catch (error, stackTrace) {
+        _response = null;
+        for (final req in _requests) {
+          // req.fail(e, stackTrace);
+          req.complete(StreamAudioResponse(
+              sourceLength: 0,
+              contentLength: 0,
+              offset: 0,
+              stream: const Stream<List<int>>.empty(),
+              contentType: "audio/mpeg"));
+        }
+        await _player?.stop();
         if (kDebugMode) {
-          print("*** error on cache class $error ${tag}***");
+          _log.e(
+            "error when trying to download the audio\nMaybe because the internet connection",
+            error: error,
+            stackTrace: stackTrace,
+          );
         }
       }
     } else {
+      _response = null;
+      // Cancel any pending request
+      // for (final req in _requests) {
+      //   req.fail(Exception(""));
+      // }
       if (kDebugMode) {
-        print("*** $index stoped ${_player?.currentIndex} ***");
+        _log.i(
+          "$index stoped because the index is ${_player?.currentIndex}",
+        );
       }
     }
     // /mine
@@ -3058,7 +3090,7 @@ class LockCachingAudioSource extends StreamAudioSource {
     return byteRangeRequest.future.then((response) {
       response.stream.listen((event) {}, onError: (Object e, StackTrace st) {
         // So that we can restart later
-        _response = null;
+        // _response = null;
         // Cancel any pending request
         for (final req in _requests) {
           req.fail(e, st);
