@@ -10,7 +10,6 @@ Future<void> main() async {
   WidgetsBinding widgetsBinding = WidgetsFlutterBinding.ensureInitialized();
   FlutterNativeSplash.preserve(widgetsBinding: widgetsBinding);
   await serviceLocator();
-
   runApp(
     MultiBlocProvider(
       providers: [
@@ -21,5 +20,3 @@ Future<void> main() async {
     ),
   );
 }
-
-
