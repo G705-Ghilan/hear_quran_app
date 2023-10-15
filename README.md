@@ -41,6 +41,7 @@ flutter run
 - ❌ Fix `just_audio` errors when opening the app without an internet connection
 - ❌ Improve the app's structural organization for enhanced readability and maintainability
 - ❌ Optimize app performance for a smoother user experience
+- ❌ Support android 13
 
 
 ## Project Structure
