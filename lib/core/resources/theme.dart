@@ -29,7 +29,7 @@ class AppTheme {
 
   static final BorderRadius radius = BorderRadius.circular(10);
   static const EdgeInsets padding = EdgeInsets.all(10);
-  static const Duration animationDuration = Duration(milliseconds: 200);
+  static const Duration duration = Duration(milliseconds: 200);
 
   static ThemeData lightThemeMode(String? family) {
     return ThemeData(

@@ -19,13 +19,16 @@ class FavoritesTab extends StatelessWidget {
               : ListView.builder(
                   itemCount: favorites.length,
                   shrinkWrap: true,
-                  itemBuilder: (context, index) => SurahItem.fromState(
-                    context,
-                    state,
-                    index,
-                    favorites[index],
-                    sequenceState,
-                  ),
+                  itemBuilder: (context, index) {
+                    final Surah surah = favorites[index];
+                    return SurahItem.fromState(
+                      context,
+                      state,
+                      state.surahs.indexOf(surah),
+                      surah,
+                      state.playingSurah.id == surah.id,
+                    );
+                  },
                 );
         },
       ),

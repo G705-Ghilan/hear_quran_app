@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:hear_quran/core/extenstions.dart';
 import 'package:hear_quran/core/resources/theme.dart';
 
 class SelectLangDialog extends StatelessWidget {
@@ -22,10 +23,12 @@ class SelectLangDialog extends StatelessWidget {
       content: Column(
           mainAxisSize: MainAxisSize.min,
           children: languages.keys.map((code) {
-            return ListTile(
+            return RadioListTile(
+              groupValue: true,
               shape: RoundedRectangleBorder(borderRadius: AppTheme.radius),
               title: Text(languages[code]!),
-              onTap: () {
+              value: context.currentCode == code,
+              onChanged: (s) {
                 Navigator.pop(context, code);
               },
             );

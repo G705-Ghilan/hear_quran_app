@@ -18,14 +18,14 @@ class AboutDialogApp extends StatelessWidget {
             "assets/images/icons/app_icon.png",
             width: 50,
           ),
-          SizedBox(width: 10),
+          const SizedBox(width: 10),
           Column(
             mainAxisSize: MainAxisSize.min,
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               Text(context.lang.aboutAppSub),
               Text(
-                "0.1.1",
+                "1.0.1",
                 style: context.textTheme.labelSmall,
               ),
             ],

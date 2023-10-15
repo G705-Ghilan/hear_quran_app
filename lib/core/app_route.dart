@@ -88,12 +88,12 @@ final routes = GoRouter(
       path: Routes.licenses.path,
       builder: (context, state) => LicensePage(
         applicationName: context.lang.aboutAppSub,
-        applicationVersion: "0.1.1",
+        applicationVersion: "1.0.1",
       ),
     ),
     GoRoute(
       path: Routes.permissions.path,
-      builder: (context, state) => PermissionsPage(),
+      builder: (context, state) => const PermissionsPage(),
     ),
   ],
 );

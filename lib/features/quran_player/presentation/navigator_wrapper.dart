@@ -27,10 +27,7 @@ class NavigatorWrapper extends StatelessWidget {
         },
       ),
       bottomNavigationBar: NavigationBar(
-        onDestinationSelected: (index) {
-          MiniPlayerWidget.controller.animateToHeight(state: PanelState.MIN);
-          navigationShell.goBranch(index);
-        },
+        onDestinationSelected: onDestinationSelected,
         selectedIndex: navigationShell.currentIndex,
         destinations: [
           NavigationDestination(
@@ -53,6 +50,14 @@ class NavigatorWrapper extends StatelessWidget {
           ),
         ],
       ),
+    );
+  }
+
+  void onDestinationSelected(index) {
+    MiniPlayerWidget.controller.animateToHeight(state: PanelState.MIN);
+    navigationShell.goBranch(
+      index,
+      initialLocation: index == navigationShell.currentIndex,
     );
   }
 }

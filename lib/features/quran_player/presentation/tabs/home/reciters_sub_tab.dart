@@ -18,7 +18,7 @@ class RecitersSubTab extends StatelessWidget {
             final Reciter reciter = state.reciters[index];
             return ReciterItem(
               reciter: reciter,
-              isSelected: state.selectedReciterId == index,
+              selected: state.selectedReciterId == index,
               onTap: () async {
                 await context.read<QuranPlayerCubit>().selectReciter(index);
               },

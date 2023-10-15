@@ -26,12 +26,12 @@ class SurahItem extends StatelessWidget {
     QuranPlayerState state,
     int index,
     Surah surah,
-    SequenceState? sequenceState,
+    bool selected,
   ) {
     final QuranPlayer player = sl.get<QuranPlayer>();
-    final bool selected = sequenceState?.currentIndex == index;
     final bool isOffline =
         player.externalSurah(state.selectedReciter.en, surah.id).existsSync();
+
     return SurahItem(
       surah: surah,
       isLiked: state.favorites.contains(surah.id),
@@ -73,12 +73,17 @@ class SurahItem extends StatelessWidget {
   Widget build(BuildContext context) {
     return GestureDetector(
       onTap: onTap,
-      child: Container(
+      child: AnimatedContainer(
+        duration: AppTheme.duration * 0.5,
         margin: const EdgeInsets.symmetric(vertical: 5),
         padding: AppTheme.padding,
         decoration: BoxDecoration(
           borderRadius: AppTheme.radius,
-          border: Border.all(color: context.colorScheme.outlineVariant),
+          border: Border.all(
+            color: selected
+                ? context.colorScheme.primary
+                : context.colorScheme.outlineVariant,
+          ),
         ),
         child: Row(
           crossAxisAlignment: CrossAxisAlignment.center,

@@ -43,7 +43,7 @@ class HomeTab extends StatelessWidget {
                 color: context.theme.colorScheme.secondaryContainer,
                 borderRadius: AppTheme.radius,
               ),
-              duration: AppTheme.animationDuration,
+              duration: AppTheme.duration,
               onValueChanged: navigationShell.goBranch,
             ),
             Expanded(

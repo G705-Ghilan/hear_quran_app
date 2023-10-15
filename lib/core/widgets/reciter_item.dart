@@ -8,11 +8,11 @@ class ReciterItem extends StatelessWidget {
     super.key,
     required this.reciter,
     this.onTap,
-    required this.isSelected,
+    required this.selected,
   });
   final Reciter reciter;
   final void Function()? onTap;
-  final bool isSelected;
+  final bool selected;
 
   @override
   Widget build(BuildContext context) {
@@ -24,20 +24,25 @@ class ReciterItem extends StatelessWidget {
         child: InkWell(
           onTap: onTap,
           borderRadius: AppTheme.radius,
-          child: Container(
+          child: AnimatedContainer(
+            duration: AppTheme.duration * 0.5,
             decoration: BoxDecoration(
               borderRadius: AppTheme.radius,
-              border: Border.all(color: context.colorScheme.outlineVariant),
+              border: Border.all(
+                  color: selected
+                      ? context.colorScheme.primary
+                      : context.colorScheme.outlineVariant),
             ),
             child: Padding(
               padding: AppTheme.padding,
               child: Row(
                 children: [
-                  Container(
+                  AnimatedContainer(
+                    duration: AppTheme.duration * 0.5,
                     decoration: BoxDecoration(
                       borderRadius: BorderRadius.circular(100),
                       border: Border.all(
-                        color: isSelected
+                        color: selected
                             ? context.colorScheme.primary
                             : Colors.transparent,
                       ),

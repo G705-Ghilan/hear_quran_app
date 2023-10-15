@@ -25,7 +25,7 @@ class SurahsSubTab extends StatelessWidget {
             state,
             index,
             state.surahs[index],
-            sequenceState,
+            sequenceState?.currentIndex == index,
           ),
         );
       },
