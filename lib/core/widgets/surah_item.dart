@@ -8,7 +8,6 @@ import 'package:hear_quran/features/general/general.dart';
 import 'package:hear_quran/features/quran_player/domain/entities/entities.dart';
 import 'package:hear_quran/features/quran_player/presentation/cubit/quran_player_cubit.dart';
 import 'package:hear_quran/services/services.dart';
-import 'package:just_audio/just_audio.dart';
 import 'package:like_button/like_button.dart';
 
 class SurahItem extends StatelessWidget {
@@ -152,7 +151,6 @@ class SurahItem extends StatelessWidget {
               ),
             const SizedBox(width: 10),
             LikeButton(
-              size: 20,
               likeCountAnimationDuration: Duration.zero,
               circleColor: CircleColor(
                 start: context.colorScheme.primary,

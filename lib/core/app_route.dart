@@ -88,7 +88,7 @@ final routes = GoRouter(
       path: Routes.licenses.path,
       builder: (context, state) => LicensePage(
         applicationName: context.lang.aboutAppSub,
-        applicationVersion: "1.0.1",
+        applicationVersion: "1.0.2",
       ),
     ),
     GoRoute(
