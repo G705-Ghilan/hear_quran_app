@@ -28,6 +28,11 @@
   "aboutDes": "Die App 'Höre Quran' ist Ihre einfache Audio-Bibliothek für den Quran. Hören Sie online oder offline Rezitationen der bekanntesten Quran-Rezitatoren, jederzeit zugänglich, nachdem Sie Ihre ausgewählten Suren installiert haben.",
   "permissions": "Berechtigungen",
   "permissionsDes": "Unsere App benötigt die Speicherberechtigung, um Ihre ausgewählten Suren auf Ihrem Gerät zu speichern, damit Sie sie offline hören können, wann immer Sie möchten.",
-  "allow": "Erlauben"
+  "allow": "Erlauben",
+  "likeUsingApp": "Gefällt Ihnen unsere App?",
+  "likeUsingAppDes": "Wer andere zu einer guten Tat führt, wird eine ähnliche Belohnung erhalten wie der Täter",
+  "rateUs": "Bewerten Sie uns",
+  "rateApp": "App bewerten",
+  "rateAppDes": "Bewerten Sie unsere App im Google Play Store"
 
 }

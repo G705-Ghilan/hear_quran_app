@@ -270,6 +270,36 @@ abstract class Strings {
   /// In en, this message translates to:
   /// **'Allow'**
   String get allow;
+
+  /// No description provided for @likeUsingApp.
+  ///
+  /// In en, this message translates to:
+  /// **'Like using our App ?'**
+  String get likeUsingApp;
+
+  /// No description provided for @likeUsingAppDes.
+  ///
+  /// In en, this message translates to:
+  /// **'He who guides (others) to an act of goodness, will have a reward similar to that of its doer'**
+  String get likeUsingAppDes;
+
+  /// No description provided for @rateUs.
+  ///
+  /// In en, this message translates to:
+  /// **'Rate Us'**
+  String get rateUs;
+
+  /// No description provided for @rateApp.
+  ///
+  /// In en, this message translates to:
+  /// **'Rate App'**
+  String get rateApp;
+
+  /// No description provided for @rateAppDes.
+  ///
+  /// In en, this message translates to:
+  /// **'Rate our app on Google play'**
+  String get rateAppDes;
 }
 
 class _StringsDelegate extends LocalizationsDelegate<Strings> {

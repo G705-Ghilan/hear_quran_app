@@ -87,4 +87,19 @@ class StringsFr extends Strings {
 
   @override
   String get allow => 'Autoriser';
+
+  @override
+  String get likeUsingApp => 'Aimez-vous utiliser notre application ?';
+
+  @override
+  String get likeUsingAppDes => 'Celui qui guide les autres vers un acte de bonté aura une récompense similaire à celle de son auteur';
+
+  @override
+  String get rateUs => 'Évaluez-nous';
+
+  @override
+  String get rateApp => 'Évaluer l\'application';
+
+  @override
+  String get rateAppDes => 'Évaluez notre application sur Google Play';
 }

@@ -87,4 +87,19 @@ class StringsAr extends Strings {
 
   @override
   String get allow => 'سمح';
+
+  @override
+  String get likeUsingApp => 'هل تحب استخدام تطبيقنا؟';
+
+  @override
+  String get likeUsingAppDes => 'الدّال على الخير كفاعله';
+
+  @override
+  String get rateUs => 'قيمنا';
+
+  @override
+  String get rateApp => 'قيم التطبيق';
+
+  @override
+  String get rateAppDes => 'قيم تطبيقنا على جوجل بلاي';
 }

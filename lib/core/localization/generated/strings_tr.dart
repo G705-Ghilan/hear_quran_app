@@ -87,4 +87,19 @@ class StringsTr extends Strings {
 
   @override
   String get allow => 'İzin Ver';
+
+  @override
+  String get likeUsingApp => 'Uygulamamızı beğendin mi?';
+
+  @override
+  String get likeUsingAppDes => 'Başkalarını iyi bir işe yönlendiren kişi, işi yapan kişiye benzer bir ödül alacaktır';
+
+  @override
+  String get rateUs => 'Bizi Değerlendirin';
+
+  @override
+  String get rateApp => 'Uygulamayı Değerlendir';
+
+  @override
+  String get rateAppDes => 'Uygulamamızı Google Play\'de değerlendirin';
 }

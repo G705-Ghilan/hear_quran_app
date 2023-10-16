@@ -51,8 +51,5 @@ Future<void> _services() async {
   // Quran player
   final QuranPlayer player = QuranPlayer();
   sl.registerLazySingleton<QuranPlayer>(() => player);
-
- 
-    await player.initCacheDir();
- 
+  await player.initCacheDir();
 }

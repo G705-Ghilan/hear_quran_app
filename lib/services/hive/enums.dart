@@ -8,7 +8,8 @@ enum BoxKeys {
   showMiniPlayer(false),
   loopMode(0),
   shufle(false),
-  offlineMode(false);
+  offlineMode(false),
+  opensCount(0);
 
   final dynamic defaultValue;
   const BoxKeys(this.defaultValue);

@@ -44,6 +44,11 @@ flutter run
 - ✅ Support android 13 [`FIXED`]
 
 
+![file](https://lottie.host/de8d3212-571c-4ecc-9f8a-48aa43bdba69/qav7y8nP75.json)
+<script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+<lottie-player src="https://lottie.host/de8d3212-571c-4ecc-9f8a-48aa43bdba69/qav7y8nP75.json" background="##fff" speed="1" style="width: 300px; height: 300px" loop controls autoplay direction="1" mode="normal"></lottie-player>
+
+
 ## Project Structure
 
 

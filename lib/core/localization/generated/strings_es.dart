@@ -87,4 +87,19 @@ class StringsEs extends Strings {
 
   @override
   String get allow => 'Permitir';
+
+  @override
+  String get likeUsingApp => '¿Te gusta usar nuestra aplicación?';
+
+  @override
+  String get likeUsingAppDes => 'El que guía a otros hacia un acto de bondad, tendrá una recompensa similar a la de quien lo realiza';
+
+  @override
+  String get rateUs => 'Califícanos';
+
+  @override
+  String get rateApp => 'Calificar la aplicación';
+
+  @override
+  String get rateAppDes => 'Califica nuestra aplicación en Google Play';
 }

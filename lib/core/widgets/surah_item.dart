@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:hear_quran/core/extenstions.dart';
 import 'package:hear_quran/core/resources/resources.dart';
+import 'package:hear_quran/core/widgets/dialogs/rate_us_dialog.dart';
 import 'package:hear_quran/core/widgets/widgets.dart';
 import 'package:hear_quran/dependencies_injection.dart';
 import 'package:hear_quran/features/general/general.dart';
@@ -44,10 +45,11 @@ class SurahItem extends StatelessWidget {
             return;
           }
         }
-        // else if (!ConnectionObserver.connected && !isOffline) {
-        //   NoConnectionDialog.show(context);
-        //   return;
-        // }
+        if (DefualtBoxValues.opensCount >= 5) {
+          await RateUsDialog.show(context);
+          return;
+        }
+
         context.read<QuranPlayerCubit>()
           ..setMiniPlayer(true)
           ..setPlayingSurahIndex(index);

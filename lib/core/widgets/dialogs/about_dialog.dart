@@ -25,7 +25,7 @@ class AboutDialogApp extends StatelessWidget {
             children: [
               Text(context.lang.aboutAppSub),
               Text(
-                "1.0.2",
+                "1.0.3",
                 style: context.textTheme.labelSmall,
               ),
             ],

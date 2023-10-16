@@ -26,5 +26,10 @@
   "aboutDes": "La aplicación Escuchar el Corán es tu sencilla biblioteca de audio del Corán. Escucha en línea o sin conexión las recitaciones de los recitadores del Corán más famosos, accesibles en cualquier momento después de instalar tus suras seleccionadas.",
   "permissions": "Permisos",
   "permissionsDes": "Nuestra aplicación requiere permiso de almacenamiento para guardar las suras seleccionadas en su dispositivo, permitiéndole escucharlas sin conexión cuando lo desee.",
-  "allow": "Permitir"
+  "allow": "Permitir",
+  "likeUsingApp": "¿Te gusta usar nuestra aplicación?",
+  "likeUsingAppDes": "El que guía a otros hacia un acto de bondad, tendrá una recompensa similar a la de quien lo realiza",
+  "rateUs": "Califícanos",
+  "rateApp": "Calificar la aplicación",
+  "rateAppDes": "Califica nuestra aplicación en Google Play"
 }

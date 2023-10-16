@@ -4,6 +4,7 @@ import 'package:go_router/go_router.dart';
 import 'package:hear_quran/core/app_route.dart';
 import 'package:hear_quran/core/extenstions.dart';
 import 'package:hear_quran/core/resources/theme.dart';
+import 'package:hear_quran/core/widgets/dialogs/rate_us_dialog.dart';
 import 'package:hear_quran/core/widgets/widgets.dart';
 import 'package:hear_quran/features/general/general.dart';
 import 'package:hear_quran/features/quran_player/presentation/cubit/quran_player_cubit.dart';
@@ -65,6 +66,13 @@ class SettingsTab extends StatelessWidget {
               ),
               Headline(title: context.lang.app),
               SettingItem(
+                title: context.lang.rateApp,
+                subtitle: context.lang.rateAppDes,
+                onTap: () {
+                  RateUsDialog.show(context);
+                },
+              ),
+              SettingItem(
                 title: context.lang.aboutApp,
                 subtitle: context.lang.aboutAppSub,
                 onTap: () {
@@ -89,3 +97,4 @@ class SettingsTab extends StatelessWidget {
     return SelectLangDialog.languages[context.currentCode]!;
   }
 }
+

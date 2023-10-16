@@ -87,4 +87,19 @@ class StringsEn extends Strings {
 
   @override
   String get allow => 'Allow';
+
+  @override
+  String get likeUsingApp => 'Like using our App ?';
+
+  @override
+  String get likeUsingAppDes => 'He who guides (others) to an act of goodness, will have a reward similar to that of its doer';
+
+  @override
+  String get rateUs => 'Rate Us';
+
+  @override
+  String get rateApp => 'Rate App';
+
+  @override
+  String get rateAppDes => 'Rate our app on Google play';
 }

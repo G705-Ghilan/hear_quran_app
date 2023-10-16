@@ -1,7 +1,7 @@
 name: hear_quran
 description: Hear Quran App
 
-version: 1.0.2+4
+version: 1.0.3+5
 
 publish_to: none
 
@@ -31,6 +31,7 @@ dependencies:
   equatable: ^2.0.5
   logger: ^2.0.2+1
   device_info: ^2.0.3
+  url_launcher: ^6.1.14
 
 
   # audio service
@@ -46,6 +47,8 @@ dependencies:
   miniplayer: ^1.0.1
   audio_video_progress_bar: ^2.0.0
   custom_sliding_segmented_control: ^1.7.5
+  lottie: ^2.6.0
+
 
   # app localization
   intl: ^0.18.1
@@ -54,6 +57,9 @@ dependencies:
   
   # splash screen
   flutter_native_splash: ^2.3.3
+
+  # others
+
 
 dev_dependencies:
   flutter_test:
@@ -69,6 +75,7 @@ flutter:
     - assets/images/reciters/
     - assets/images/icons/
     - assets/audio/empty.mp3
+    - assets/animated/
   fonts:
     - family: Amiri
       fonts:

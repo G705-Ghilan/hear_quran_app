@@ -87,4 +87,19 @@ class StringsDe extends Strings {
 
   @override
   String get allow => 'Erlauben';
+
+  @override
+  String get likeUsingApp => 'Gefällt Ihnen unsere App?';
+
+  @override
+  String get likeUsingAppDes => 'Wer andere zu einer guten Tat führt, wird eine ähnliche Belohnung erhalten wie der Täter';
+
+  @override
+  String get rateUs => 'Bewerten Sie uns';
+
+  @override
+  String get rateApp => 'App bewerten';
+
+  @override
+  String get rateAppDes => 'Bewerten Sie unsere App im Google Play Store';
 }

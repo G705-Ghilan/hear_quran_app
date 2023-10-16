@@ -10,6 +10,9 @@ class MainBox {
     await Hive.initFlutter();
     box = await Hive.openBox(boxName);
     await DefualtBoxValues().initializeLastValues();
+    if (DefualtBoxValues.opensCount >= 0) {
+      await set(BoxKeys.opensCount, ++DefualtBoxValues.opensCount);
+    }
   }
 
   static Future<void> set<T>(BoxKeys key, T value) async {

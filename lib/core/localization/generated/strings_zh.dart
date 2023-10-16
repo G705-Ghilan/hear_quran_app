@@ -87,4 +87,19 @@ class StringsZh extends Strings {
 
   @override
   String get allow => '允许';
+
+  @override
+  String get likeUsingApp => '喜欢使用我们的应用程序吗？';
+
+  @override
+  String get likeUsingAppDes => '引导他人做好事的人，将获得与实际行动者相似的奖励';
+
+  @override
+  String get rateUs => '给我们评分';
+
+  @override
+  String get rateApp => '评价应用';
+
+  @override
+  String get rateAppDes => '在Google Play上评价我们的应用';
 }

@@ -26,5 +26,10 @@
   "aboutDes": "L'application Écoutez le Coran est votre bibliothèque audio du Coran simple. Écoutez en ligne ou hors ligne les récitations des récitants du Coran les plus célèbres, accessibles à tout moment après avoir installé vos sourates sélectionnées.",
   "permissions": "Autorisations",
   "permissionsDes": "Notre application nécessite l'autorisation de stockage pour enregistrer les sourates que vous avez sélectionnées sur votre appareil, vous permettant de les écouter hors ligne à votre convenance.",
-  "allow": "Autoriser"
+  "allow": "Autoriser",
+  "likeUsingApp": "Aimez-vous utiliser notre application ?",
+  "likeUsingAppDes": "Celui qui guide les autres vers un acte de bonté aura une récompense similaire à celle de son auteur",
+  "rateUs": "Évaluez-nous",
+  "rateApp": "Évaluer l'application",
+  "rateAppDes": "Évaluez notre application sur Google Play"
 }
