@@ -264,6 +264,89 @@
         "zh": "阿卜杜勒-拉赫曼·阿尔-苏代斯",
         "unAvailables": [],
         "url": "https://server11.mp3quran.net/sds"
+    },
+    {
+        "img": "16.jpg",
+        "en": "Muhammad Siddiq Al-Minshawi",
+        "ar": "محمد صديق المنشاوي",
+        "zh": "穆罕默德·西迪克·阿尔-明沙维",
+        "unAvailables": [],
+        "url": "https://server10.mp3quran.net/minsh"
+    },
+    {
+        "img": "17.jpg",
+        "en": "Ibrahim Al Akhdar",
+        "ar": "إبراهيم الأخضر",
+        "zh": "易卜拉欣·阿尔·阿赫达尔",
+        "unAvailables": [],
+        "url": "https://server6.mp3quran.net/download/akdr"
+    },
+    {
+        "img": "18.jpg",
+        "en": "Mahmoud El-Banna",
+        "ar": "محمود علي البنا",
+        "zh": "马哈茂德·艾勒-班纳",
+        "unAvailables": [],
+        "url": "https://server8.mp3quran.net/download/bna"
+    },
+    {
+        "img": "19.jpg",
+        "en": "Hazaa Balushi",
+        "ar": "هزاع البلوشي",
+        "zh": "哈扎·巴卢什",
+        "unAvailables": [
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            16,
+            17,
+            20,
+            21,
+            22,
+            23,
+            24,
+            26,
+            27,
+            28,
+            32,
+            33,
+            34,
+            35,
+            41,
+            43,
+            45,
+            46,
+            48,
+            58,
+            59,
+            60,
+            61,
+            62,
+            63,
+            64,
+            65,
+            66
+        ],
+        "url": "https://server11.mp3quran.net/download/hazza"
+    },
+    {
+        "img": "20.jpg",
+        "en": "Idris Abkar",
+        "ar": "إدريس أبكر",
+        "zh": "伊德里斯·阿布卡尔",
+        "unAvailables": [
+            45,
+            46,
+            49
+        ],
+        "url": "https://server6.mp3quran.net/download/abkr"
     }
-    
 ]
