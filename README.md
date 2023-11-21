@@ -41,12 +41,8 @@ flutter run
 - ❌ Fix `just_audio` errors when opening the app without an internet connection
 - ❌ Improve the app's structural organization for enhanced readability and maintainability
 - ❌ Optimize app performance for a smoother user experience
-- ✅ Support android 13 [`FIXED`]
+- ✅ Support android 13 [ `FIXED` ]
 
-
-![file](https://lottie.host/de8d3212-571c-4ecc-9f8a-48aa43bdba69/qav7y8nP75.json)
-<script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
-<lottie-player src="https://lottie.host/de8d3212-571c-4ecc-9f8a-48aa43bdba69/qav7y8nP75.json" background="##fff" speed="1" style="width: 300px; height: 300px" loop controls autoplay direction="1" mode="normal"></lottie-player>
 
 
 ## Project Structure
@@ -175,5 +171,7 @@ We warmly welcome contributions from the community. If you would like to contrib
 
 ## License
 
-Hear Quran App is open-source and available under the MIT license
+Hear Quran App is open-source and available under the MIT license.
+for more information see [app license](https://github.com/G705-Ghilan/hear_quran_app/blob/main/privacy-policy.md).
+if you have any questions please contact us via email ```GhilanAlharazi@gmail.com```.
 
