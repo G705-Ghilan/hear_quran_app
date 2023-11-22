@@ -1,7 +1,7 @@
 [
     {
         "img": "1.png",
-        "en": "Mishari Rashid al-Afasy",
+        "en": "Mishari Rashid Al-Afasy",
         "ar": "مشاري العفاسي",
         "zh": "米沙里·拉希德·阿尔-阿法西",
         "unAvailables": [],
@@ -112,7 +112,7 @@
     },
     {
         "img": "8.jpg",
-        "en": "Abu Bakr Al Shatri ",
+        "en": "Abu Bakr Al-Shatri ",
         "ar": "أبو بكر الشاطري",
         "zh": "阿布·巴克尔·阿尔-沙特里",
         "unAvailables": [],
@@ -120,7 +120,7 @@
     },
     {
         "img": "9.jpg",
-        "en": "Yasser Al Dosari",
+        "en": "Yasser Al-Dosari",
         "ar": "ياسر الدوسري",
         "zh": "亚瑟·阿尔·多萨里",
         "unAvailables": [],
@@ -227,7 +227,7 @@
     },
     {
         "img": "11.jpg",
-        "en": "Mahmoud Khalil Al Hosary",
+        "en": "Mahmoud Khalil Al-Hosary",
         "ar": "محمود خليل الحصري ",
         "zh": "马哈茂德·哈利勒·阿尔·侯萨里",
         "unAvailables": [],
@@ -243,7 +243,7 @@
     },
     {
         "img": "13.jpg",
-        "en": "Abdullah Awad Al Juhani",
+        "en": "Abdullah Awad Al-Juhani",
         "ar": "عبد الله عواد الجهني",
         "zh": "阿卜杜拉·阿瓦德·阿尔·朱哈尼",
         "unAvailables": [],
@@ -275,7 +275,7 @@
     },
     {
         "img": "17.jpg",
-        "en": "Ibrahim Al Akhdar",
+        "en": "Ibrahim Al-Akhdar",
         "ar": "إبراهيم الأخضر",
         "zh": "易卜拉欣·阿尔·阿赫达尔",
         "unAvailables": [],
@@ -348,5 +348,71 @@
             49
         ],
         "url": "https://server6.mp3quran.net/download/abkr"
+    },
+    {
+        "img": "21.jpg",
+        "en": "Saud Al-Shuraim",
+        "ar": "سعود الشريم",
+        "zh": "萨乌德·阿尔-舒赖姆",
+        "unAvailables": [],
+        "url": "https://server7.mp3quran.net/shur"
+    },
+    {
+        "img": "22.jpg",
+        "en": "Muhammad Tablawi",
+        "ar": "محمد محمود الطبلاوي",
+        "zh": "穆罕默德·塔布拉维",
+        "unAvailables": [],
+        "url": "https://server12.mp3quran.net/tblawi"
+    },
+    {
+        "img": "23.jpg",
+        "en": "Hatem Farid Al-Waer",
+        "ar": "حاتم فريد الواعر",
+        "zh": "哈蒂姆·法里德·阿尔-瓦尔",
+        "unAvailables": [],
+        "url": "https://server11.mp3quran.net/hatem"
+    },
+    {
+        "img": "24.jpg",
+        "en": "Nasser Al-Qatami",
+        "ar": "ناصر القطامي",
+        "zh": "纳瑟尔·阿尔·卡塔米",
+        "unAvailables": [],
+        "url": "https://server6.mp3quran.net/qtm"
+    },
+    {
+        "img": "25.jpg",
+        "en": "Khalifa Al-Tunaiji",
+        "ar": "خليفة الطنيجي",
+        "zh": "哈利法·阿尔-图奈吉",
+        "unAvailables": [],
+        "url": "https://server12.mp3quran.net/tnjy"
+    },
+    {
+        "img": "26.jpg",
+        "en": "Khaled Al-Jalil",
+        "ar": "خالد الجليل",
+        "zh": "哈立德·阿尔-贾利勒",
+        "unAvailables": [],
+        "url": "https://server10.mp3quran.net/jleel"
+    },
+    {
+        "img": "27.jpg",
+        "en": "Abdulaziz Al-Zahrani",
+        "ar": "عبد العزيز الزهراني",
+        "zh": "阿卜杜勒阿齐兹·阿尔-扎赫拉尼",
+        "unAvailables": [],
+        "url": "https://server9.mp3quran.net/zahrani"
+    },
+    {
+        "img": "28.jpg",
+        "en": "Ali Al Hudhaifi",
+        "ar": "علي الحذيفي",
+        "zh": "阿里·阿尔-胡代菲",
+        "unAvailables": [],
+        "url": "https://server9.mp3quran.net/hthfi"
     }
 ]
+
+
